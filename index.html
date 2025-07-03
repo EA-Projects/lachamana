@@ -37,7 +37,7 @@
         <section id="hero">
             <img src="public/images/la-chamana-text.svg" alt="La Chamana" class="chamana-text">
             <video class="video-background" autoplay muted loop playsinline>
-                <source src="public/landingvideo.mp4" type="video/mp4">
+                <source src="public/lachamana-hero.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="container">
@@ -83,7 +83,7 @@
                             <div class="inner-video-preview" type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoPreviewModal">
                                 <div class="inner-video-holder">
                                     <video class="video-preview" autoplay muted loop playsinline>
-                                        <source src="public/landingvideo.mp4" type="video/mp4">
+                                        <source src="public/lachamana-preview.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                     <img src="public/images/play-video.svg" class="play-icon" role="presentation">
@@ -103,7 +103,7 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <video class="video-preview" autoplay muted loop playsinline>
-                            <source src="public/landingvideo.mp4" type="video/mp4">
+                            <source src="public/lachamana-hero.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -117,8 +117,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="inner-top-area">
-                                <h2 class="h1">Some places are not <i>visited</i>. They are <i>experienced</i>.</h2>
-                                <h4 class="light-brown">
+                                <h2 class="h1" data-i18n="places.title">Some places are not <i>visited</i>. They are <i>experienced</i>.</h2>
+                                <h4 class="light-brown" data-i18n="places.description">
                                     La Chamana is a private villa surrounded by the jungle of Tulum, only minutes away from the town’s most beautiful beaches. <br>
                                     Designed for full-villa stays, it invites you and your group to <i>slow down, reconnect, & live with intention</i>.
                                 </h4>
@@ -129,19 +129,19 @@
                         <div class="col-12 col-md-4">
                             <div class="inner-place-block">
                                 <img src="public/images/icon-concierge.svg" alt="">
-                                <h5 class="light-brown">A dedicated concierge to curate and care for every detail of your journey from start to finish.</h5>
+                                <h5 class="light-brown" data-i18n="places.item1">A dedicated concierge to curate and care for every detail of your journey from start to finish.</h5>
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="inner-place-block is-middle">
                                 <img src="public/images/icon-suites.svg" alt="">
-                                <h5 class="light-brown">Eight suites. <br> A full house entirely for you.</h5>
+                                <h5 class="light-brown" data-i18n="places.item2">Eight suites. <br> A full house entirely for you.</h5>
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="inner-place-block is-small">
                                 <img src="public/images/icon-wellness.svg" alt="">
-                                <h5 class="light-brown">Exclusive areas created for rest, reflection, joy, and connection.</h5>
+                                <h5 class="light-brown" data-i18n="places.item3">Exclusive areas created for rest, reflection, joy, and connection.</h5>
                             </div>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                     <div class="col-12">
                         <div class="inner-flex">
                             <h2>A sanctuary <br> of <i>silence</i></h2>
-                            <div class="browse-gallery">
+                            <div class="browse-gallery" type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal">
                                 <h4>browse gallery</h4>
                                 <span class="plus-button">+</span>
                             </div>
@@ -230,10 +230,54 @@
             </div>
         </section>
 
+        <!-- Modal Gallery -->
+        <div class="modal fade is-gallery" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4>Inside <i>La Chamana</i></h4>
+                        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="public/images/gallery/gallery-slide-1.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/images/gallery/gallery-slide-2.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/images/gallery/gallery-slide-3.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/images/gallery/gallery-slide-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                <svg width="54" height="55" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.59961" y="27.5" width="36" height="36" transform="rotate(-45 1.59961 27.5)" stroke="#F5C03D" stroke-width="1.5"/>
+                                    <path d="M28.2 20.2998L21 27.4998L28.2 34.6998" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                                <svg width="54" height="55" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.40039" y="27.5" width="36" height="36" transform="rotate(-45 1.40039 27.5)" stroke="#F5C03D" stroke-width="1.5"/>
+                                    <path d="M24.8 20.2998L32 27.4998L24.8 34.6998" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section id="bookings">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-6">
                         <div class="inner-left-content">
                             <div class="inner-flex">
                                 <h2 class="h1">Bookings & <br> <i>Availability</i></h2>
@@ -250,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-7">
+                    <div class="col-12 col-md-6">
                         <div class="wrapper-nights-card">
                             <div class="nights-card">
                                 <div class="inner-night-title">
@@ -261,11 +305,12 @@
                                     </div>
                                     <p class="medium family-behind"><i>3 nights</i></p>
                                     <h4 class="light-brown">Opening the Threshold</h4>
-                                    <p class="medium">A brief and powerful immersion. <br>The beginning of a deeper way of inhabiting time.</p>
+                                    <p class="smaller">A brief and powerful immersion. <br>The beginning of a deeper way of inhabiting time.</p>
+                                    <a href="#" class="button">Book now</a>
                                 </div>
                                 <span class="divider"></span>
                                 <div class="inner-night-details">
-                                    <p class="small mb-2">Includes:</p>
+                                    <p class="smaller mb-2">Includes:</p>
                                     <ul>
                                         <li>Exclusive full-villa stay for you and your group</li>
                                         <li>Sensory welcome experience</li>
@@ -290,7 +335,8 @@
                                     </div>
                                     <p class="medium family-behind"><i>7 nights</i></p>
                                     <h4 class="light-brown">Shamana Stay</h4>
-                                    <p class="medium">An extended experience of presence, reconnection, and refinement.</p>
+                                    <p class="smaller">An extended experience of presence, reconnection, and refinement.</p>
+                                    <a href="#" class="button">Book now</a>
                                 </div>
                                 <span class="divider"></span>
                                 <div class="inner-night-details">
@@ -328,43 +374,53 @@
                                 <h3>Be part of this <i>first chapter</i></h3>
                                 <h4 class="light-brown">Leave your details and someone from our team will reach out personally to begin the conversation.</h4>
                             </div>
-                            
-                            <form action="">
-                                <div class="row-field">
-                                    <label for="full-name">
-                                        Full Name
-                                        <input type="text" name="full-name" required>
-                                    </label>
-                                    <label for="email">
-                                        Email
-                                        <input type="email" name="email" required>
-                                    </label>
-                                </div>
-                                <div class="row-field">
-                                    <label for="phone">Phone
-                                        <input type="phone" name="phone">
-                                    </label>
-                                    <label for="date">
-                                        When would you like to come?
-                                        <div class="row-field">
-                                            <input type="text" name="date" id="datepicker-in" autocomplete="off">
-                                            <p class="label">to</p>
-                                            <input type="text" name="date" id="datepicker-out" autocomplete="off">
-                                        </div>
-                                    </label>	
-                                </div>
-                                <div class="row-field">
-                                    <label for="message">Is there anything you'd like to share with us before stepping into this experience?
-                                        <textarea name="message" id=""></textarea>
-                                    </label>
-                                </div>
-                                <div class="row-field">
-                                    <div class="wrapper-submit">
-                                        <input type="submit" value="Send request" class="button">
-                                        <span class="inner-border"></span>
+                            <div class="wrapper-reserve-area">
+                                <form id="reserve-form" action="">
+                                    <div class="row-field">
+                                        <label for="full-name">
+                                            Full Name
+                                            <input type="text" name="full-name" required>
+                                        </label>
+                                        <label for="email">
+                                            Email
+                                            <input type="email" name="email" required>
+                                        </label>
                                     </div>
+                                    <div class="row-field">
+                                        <label for="phone">Phone
+                                            <input type="phone" name="phone">
+                                        </label>
+                                        <label>
+                                            When would you like to come?
+                                            <div class="row-field">
+                                                <input type="text" name="date-in" id="datepicker-in" autocomplete="off">
+                                                <p class="label">to</p>
+                                                <input type="text" name="date-out" id="datepicker-out" autocomplete="off">
+                                            </div>
+                                        </label>	
+                                    </div>
+                                    <div class="row-field">
+                                        <label for="message">Is there anything you'd like to share with us before stepping into this experience?
+                                            <textarea name="message" id=""></textarea>
+                                        </label>
+                                    </div>
+                                    <div class="row-field">
+                                        <div class="wrapper-submit">
+                                            <input type="submit" value="Send request" class="button">
+                                            <span class="inner-border"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="success-message">
+                                    <div class="icon-holder">
+                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5"/>
+                                        </svg>                    
+                                    </div>
+                                    <h3>Thank you for your request!</h3>
+                                    <p class="light-yellow">Someone from our team will reach out personally to begin the conversation.</p>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>

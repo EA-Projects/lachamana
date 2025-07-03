@@ -8891,7 +8891,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 #ui-datepicker-div {
   display: none;
-  background-color: rgba(11, 13, 2, 0.8);
+  background-color: rgba(11, 13, 2, 0.95);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   margin-top: 0.25rem;
@@ -9140,7 +9140,7 @@ p.small, .p.small {
   font-size: 11px;
 }
 p.smaller, .p.smaller {
-  font-size: 10px;
+  font-size: 12px;
 }
 p.medium, .p.medium {
   font-size: 13px;
@@ -9182,10 +9182,19 @@ ul, ol {
   padding-left: 6px;
 }
 ul li, ol li {
-  font-size: 10px;
+  font-size: 12px;
   color: #D8CEB7;
   position: relative;
   margin: 5px 0;
+}
+ul li i, ol li i {
+  font-family: "DM Sans", sans-serif;
+}
+ul li:first-child, ol li:first-child {
+  margin-top: 0;
+}
+ul li:last-child, ol li:last-child {
+  margin-bottom: 0;
 }
 
 ul {
@@ -9195,7 +9204,7 @@ ul li::before {
   content: "";
   position: absolute;
   left: -8px;
-  top: 3px;
+  top: 6px;
   width: 5px;
   height: 5px;
   background-image: url("../public/images/list-rhom.svg");
@@ -9205,6 +9214,9 @@ ul li::before {
 }
 ul li ul li::before {
   background-image: url("../public/images/inner-list-rhom.svg");
+}
+ul li ul li:first-child {
+  margin-top: 5px;
 }
 
 .button {
@@ -9242,6 +9254,7 @@ ul li ul li::before {
   background-position: 5% center, 93% center;
   background-size: 5px, 5px;
   background-repeat: no-repeat, no-repeat;
+  pointer-events: none;
 }
 .button:hover {
   color: #0F1301;
@@ -9498,10 +9511,24 @@ section {
 }
 
 .modal-backdrop {
-  background-color: #0F1301;
+  background-color: #121C13;
 }
 .modal-backdrop.show {
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .modal .modal-dialog {
@@ -9539,11 +9566,55 @@ section {
   width: 100%;
   line-height: 0;
 }
+.modal.is-gallery .modal-dialog {
+  max-width: 880px;
+}
+.modal.is-gallery .modal-dialog .modal-content {
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  border: 0;
+}
+.modal.is-gallery .modal-dialog .modal-content h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.carousel {
+  max-width: 719px;
+  margin: 0 auto;
+}
+.carousel .carousel-inner .carousel-item {
+  padding: 8px;
+  border: 1px solid #F5C03D;
+  border-radius: 6px;
+}
+.carousel .carousel-inner .carousel-item img {
+  border-radius: 4px;
+  width: 100%;
+}
+.carousel .carousel-control-prev {
+  left: -10%;
+}
+.carousel .carousel-control-next {
+  right: -10%;
+}
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  width: auto;
+}
+.carousel .carousel-control-prev .carousel-control-prev-icon,
+.carousel .carousel-control-prev .carousel-control-next-icon,
+.carousel .carousel-control-next .carousel-control-prev-icon,
+.carousel .carousel-control-next .carousel-control-next-icon {
+  display: none;
+}
 
 #places {
   padding: 70px 0;
-  background: url("../public/images/places-bg.webp"), -webkit-gradient(linear, left top, left bottom, from(#121C13), to(#081309));
-  background: url("../public/images/places-bg.webp"), linear-gradient(180deg, #121C13 0%, #081309 100%);
+  background: url("../public/images/places-bg.webp"), #121C13;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9575,7 +9646,6 @@ section {
 #places .inner-holder-content::after {
   top: initial;
   bottom: -13px;
-  background-color: #0a140b;
 }
 #places .inner-holder-content .inner-top-area {
   margin-bottom: 70px;
@@ -9791,6 +9861,7 @@ section {
   position: absolute;
   inset: 0;
   border: 2px solid #F5C03D;
+  margin-top: 2px;
   -webkit-transform: rotate(45deg) scale(1);
           transform: rotate(45deg) scale(1);
   -webkit-transition: all 0.3s ease-in-out;
@@ -9866,8 +9937,11 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#bookings .inner-flex .inner-villa-disclaimer {
+#bookings .inner-flex .inner-villa-disclaimer h5 {
   max-width: 470px;
+}
+#bookings .inner-flex .inner-villa-disclaimer p {
+  max-width: none;
 }
 #bookings .wrapper-nights-card {
   height: 100%;
@@ -9888,7 +9962,7 @@ section {
 }
 #bookings .wrapper-nights-card .nights-card {
   width: 100%;
-  max-width: 630px;
+  max-width: 600px;
   margin: 0 0 0 auto;
   padding: 30px;
   background-color: rgba(11, 13, 2, 0.8);
@@ -9906,7 +9980,7 @@ section {
 }
 #bookings .wrapper-nights-card .nights-card .inner-night-title {
   text-align: center;
-  max-width: 265px;
+  max-width: 200px;
 }
 #bookings .wrapper-nights-card .nights-card .inner-night-title .d-flex {
   gap: 3px;
@@ -9914,6 +9988,9 @@ section {
 }
 #bookings .wrapper-nights-card .nights-card .inner-night-title h4 {
   margin-bottom: 15px;
+}
+#bookings .wrapper-nights-card .nights-card .inner-night-title p {
+  margin-bottom: 25px;
 }
 #bookings .wrapper-nights-card .nights-card .divider {
   -ms-flex-item-align: stretch;
@@ -10002,11 +10079,14 @@ section {
 #form .wrapper-form .inner-top-area p {
   color: #9C937C;
 }
-#form .wrapper-form form {
+#form .wrapper-form .wrapper-reserve-area {
+  position: relative;
+}
+#form .wrapper-form .wrapper-reserve-area form {
   max-width: 490px;
   margin: 0 auto;
 }
-#form .wrapper-form form .row-field {
+#form .wrapper-form .wrapper-reserve-area form .row-field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10019,16 +10099,16 @@ section {
   gap: 10px;
   margin: 10px 0;
 }
-#form .wrapper-form form .row-field .row-field {
+#form .wrapper-form .wrapper-reserve-area form .row-field .row-field {
   margin: 0;
 }
-#form .wrapper-form form .row-field input:not(.button),
-#form .wrapper-form form .row-field textarea {
+#form .wrapper-form .wrapper-reserve-area form .row-field input:not(.button),
+#form .wrapper-form .wrapper-reserve-area form .row-field textarea {
   margin-top: 5px;
   width: 100%;
 }
-#form .wrapper-form form input:not(.button),
-#form .wrapper-form form textarea {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button),
+#form .wrapper-form .wrapper-reserve-area form textarea {
   background-color: #121C13;
   border: 1px solid #342A1F;
   border-radius: 4px;
@@ -10040,68 +10120,122 @@ section {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#form .wrapper-form form input:not(.button)::-webkit-input-placeholder, #form .wrapper-form form textarea::-webkit-input-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-webkit-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-webkit-input-placeholder {
   color: #9C937C;
 }
-#form .wrapper-form form input:not(.button)::-moz-placeholder, #form .wrapper-form form textarea::-moz-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-moz-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-moz-placeholder {
   color: #9C937C;
 }
-#form .wrapper-form form input:not(.button):-ms-input-placeholder, #form .wrapper-form form textarea:-ms-input-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button):-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea:-ms-input-placeholder {
   color: #9C937C;
 }
-#form .wrapper-form form input:not(.button)::-ms-input-placeholder, #form .wrapper-form form textarea::-ms-input-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-ms-input-placeholder {
   color: #9C937C;
 }
-#form .wrapper-form form input:not(.button)::placeholder,
-#form .wrapper-form form textarea::placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button)::placeholder,
+#form .wrapper-form .wrapper-reserve-area form textarea::placeholder {
   color: #9C937C;
 }
-#form .wrapper-form form input:not(.button):hover,
-#form .wrapper-form form textarea:hover {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button):hover,
+#form .wrapper-form .wrapper-reserve-area form textarea:hover {
   border: 1px solid rgba(201, 169, 95, 0.3);
 }
-#form .wrapper-form form ::-webkit-calendar-picker-indicator {
+#form .wrapper-form .wrapper-reserve-area form ::-webkit-calendar-picker-indicator {
   background: url("../public/images/date-icon.svg");
   background-position: center;
   background-size: 12px;
   background-repeat: no-repeat;
 }
-#form .wrapper-form form textarea {
+#form .wrapper-form .wrapper-reserve-area form textarea {
   min-height: 120px;
   resize: none;
 }
-#form .wrapper-form form .label,
-#form .wrapper-form form label {
+#form .wrapper-form .wrapper-reserve-area form .label,
+#form .wrapper-form .wrapper-reserve-area form label {
   font-size: 11px;
   color: #9C937C;
   text-align: left;
 }
-#form .wrapper-form form label {
+#form .wrapper-form .wrapper-reserve-area form label {
   width: 100%;
 }
-#form .wrapper-form form .wrapper-submit {
+#form .wrapper-form .wrapper-reserve-area form .wrapper-submit {
   margin-top: 10px;
   position: relative;
 }
-#form .wrapper-form form .wrapper-submit .inner-border {
+#form .wrapper-form .wrapper-reserve-area form .wrapper-submit::before {
   content: "";
   position: absolute;
   pointer-events: none;
   inset: 2px;
   border-radius: 2px;
-  border: 1px solid #FFFFFF;
-  opacity: 0.33;
+  border: 1px solid #FCCC53;
+  z-index: 1;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-#form .wrapper-form form .wrapper-submit:hover .inner-border {
+#form .wrapper-form .wrapper-reserve-area form .wrapper-submit::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
   inset: 0;
-  opacity: 0.5;
+  background: url("../public/images/button-rhomb.svg"), url("../public/images/button-rhomb.svg");
+  background-position: 5% center, 93% center;
+  background-size: 5px, 5px;
+  background-repeat: no-repeat, no-repeat;
+}
+#form .wrapper-form .wrapper-reserve-area form .wrapper-submit:hover::before {
+  inset: 0;
   border-radius: 4px;
 }
-#form .wrapper-form form input.button {
+#form .wrapper-form .wrapper-reserve-area form input.button {
   outline: none;
   border: 0;
+}
+#form .wrapper-form .wrapper-reserve-area form.readonly > * {
+  pointer-events: none;
+}
+#form .wrapper-form .wrapper-reserve-area form.readonly .wrapper-submit {
+  opacity: 0.15;
+}
+#form .wrapper-form .wrapper-reserve-area #success-message {
+  display: none;
+  position: absolute;
+  inset: 0;
+  max-width: 490px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #121C13;
+  padding: 65px 20px;
+  border: 1px solid #F5C03D;
+  border-radius: 4px;
+  pointer-events: none;
+}
+#form .wrapper-form .wrapper-reserve-area #success-message .icon-holder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F5C03D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 20px;
+}
+#form .wrapper-form .wrapper-reserve-area #success-message h3 {
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+#form .wrapper-form .wrapper-reserve-area #success-message p {
+  max-width: 370px;
+  margin: 0 auto;
 }
 @media (min-width: 1441px) {
   #form {
