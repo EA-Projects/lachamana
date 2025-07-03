@@ -9239,7 +9239,7 @@ ul li ul li::before {
   position: absolute;
   inset: 0;
   background: url("../public/images/button-rhomb.svg"), url("../public/images/button-rhomb.svg");
-  background-position: 7% center, 93% center;
+  background-position: 5% center, 93% center;
   background-size: 5px, 5px;
   background-repeat: no-repeat, no-repeat;
 }
@@ -9449,7 +9449,7 @@ section {
 }
 #hero .inner-bottom-hero .inner-video-preview {
   width: 100%;
-  max-width: 300px;
+  max-width: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9460,7 +9460,7 @@ section {
   border-radius: 8px;
   background-color: #0F1301;
   border: 1px solid #0F1301;
-  padding: 4px;
+  padding: 4px 8px 4px 4px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
