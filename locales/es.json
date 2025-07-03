@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Bienvenido a nuestro sitio",
+    "subtitle": "Explorá nuestros servicios"
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "description": "Somos una empresa dedicada a..."
+  },
+  "footer": {
+    "contact": "Contacto",
+    "privacy": "Política de privacidad"
+  },
+  "form": {
+    "name": "Nombre completo",
+    "email": "Correo electrónico"
+  }
+}
