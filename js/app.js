@@ -25,7 +25,7 @@ function loadLanguage(lang) {
       $('[data-i18n]').each(function () {
         const key = $(this).data('i18n');
         const translation = $.i18n(key);
-        $(this).text(translation || `[${key}]`);
+        $(this).html(translation || `[${key}]`);
       });
 
       // Aplicar traducciones a placeholders
@@ -57,4 +57,16 @@ window.addEventListener('load', function () {
     const lang = $(this).data('lang');
     loadLanguage(lang);
   });
+
+  $(function(){
+    $("#datepicker-in").datepicker({
+      dateFormat: "dd-mm-yy"
+      ,	duration: "fast"
+    });
+    $("#datepicker-out").datepicker({
+      dateFormat: "dd-mm-yy"
+      ,	duration: "fast"
+    });
+  });
+
 });

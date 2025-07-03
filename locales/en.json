@@ -1,18 +1,11 @@
 {
   "home": {
-    "title": "Welcome to our site",
-    "subtitle": "Explore our services"
-  },
-  "about": {
-    "title": "About us",
-    "description": "We are a company dedicated to..."
-  },
-  "footer": {
-    "contact": "Contact",
-    "privacy": "Privacy Policy"
-  },
-  "form": {
-    "name": "Full Name",
-    "email": "Email"
+    "callToActionTitle": "Claim your journey",
+    "callToActionButton": "Connect with us",
+    "languageTitle": "Select your language",
+    "title": "You're not choosing <i>where</i> to go. <br> You're choosing <i>how</i> to be.",
+    "firstIntro": "La Chamana is not just a destination. She is a way of inhabiting time.",
+    "secondIntro": "A private villa in Tulum, designed for those who seek beauty, presence, privacy, and the kind of quality that makes each moment feel one of a kind.",
+    "titlePreviewVideo": "Discover <br><i>our essence</i>"
   }
 }

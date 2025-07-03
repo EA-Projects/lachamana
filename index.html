@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Chamana</title>
-    <meta name="description" content="">
+    <meta name="description" content="A private villa in Tulum, designed for those who seek beauty, presence, privacy, and the kind of quality that makes each moment feel one of a kind.">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
 
@@ -15,7 +16,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
     <meta property="og:title" content="La Chamana"/>
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="A private villa in Tulum, designed for those who seek beauty, presence, privacy, and the kind of quality that makes each moment feel one of a kind." />
     <meta property="og:image" content="" />
     <meta property="og:image:secure_url" content="" /> 
     <meta property="og:image:width" content="1200" />
@@ -24,7 +25,7 @@
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="La Chamana">
-    <meta name="description" content="">
+    <meta name="description" content="A private villa in Tulum, designed for those who seek beauty, presence, privacy, and the kind of quality that makes each moment feel one of a kind.">
     <meta name="twitter:image" content="">
 
 </head>
@@ -44,14 +45,14 @@
                     <div class="col-12">
                         <div class="inner-top-hero">
                             <div class="inner-flex">
-                                <p>Claim your journey</p>
-                                <a href="#form" class="button">Connect with us</a>
+                                <p class="h5" data-i18n="home.callToActionTitle">Claim your journey</p>
+                                <a href="#form" class="button" data-i18n="home.callToActionButton">Connect with us</a>
                             </div>
                             <div class="inner-flex">
                                 <img src="public/images/lachamana-full.svg" alt="La Chamana">
                             </div>
                             <div class="inner-flex">
-                                <p>Select your language</p>
+                                <p class="h5" data-i18n="home.languageTitle">Select your language</p>
                                 <div class="lenguage-selector">
                                     <button class="lang-button" data-lang="en">EN</button>
                                     <button class="lang-button" data-lang="es">ES</button>
@@ -62,7 +63,7 @@
                 </div>
                 <div class="row">
                     <div class="inner-content">
-                        <h1>
+                        <h1 data-i18n="home.title">
                             You're not choosing <i>where</i> to go. <br>
                             You're choosing <i>how</i> to be.
                         </h1>
@@ -72,14 +73,14 @@
                     <div class="col-12">
                         <div class="inner-bottom-hero">
                             <div class="inner-flex">
-                                <h4 class="mb-2">
+                                <h4 class="mb-2" data-i18n="home.firstIntro">
                                     La Chamana is not just a destination. She is a way of inhabiting time. 
                                 </h4>
-                                <h4>
+                                <h4 data-i18n="home.secondIntro">
                                     A private villa in Tulum, designed for those who seek beauty, presence, privacy, and the kind of quality that makes each moment feel one of a kind.
                                 </h4>
                             </div>
-                            <div class="inner-video-preview">
+                            <div class="inner-video-preview" type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoPreviewModal">
                                 <div class="inner-video-holder">
                                     <video class="video-preview" autoplay muted loop playsinline>
                                         <source src="public/landingvideo.mp4" type="video/mp4">
@@ -87,7 +88,7 @@
                                     </video>
                                     <img src="public/images/play-video.svg" class="play-icon" role="presentation">
                                 </div>
-                                <h4>Discover <br><i>our essence</i>
+                                <h4 data-i18n="home.titlePreviewVideo">Discover <br><i>our essence</i>
                                 </h4>
                             </div>
                         </div>
@@ -95,6 +96,20 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoPreviewModal" tabindex="-1" role="dialog" aria-labelledby="videoPreviewModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <video class="video-preview" autoplay muted loop playsinline>
+                            <source src="public/landingvideo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section id="places">
             <div class="inner-holder-content">
@@ -150,34 +165,34 @@
                             <p class="smaller">Receive facials, massages, and body treatments that renew energy and awaken the senses.</p>
                         </div>
                         <div class="inner-space">
-                            <img src="public/images/icon-templo.svg" alt="Mirror Temple">
-                            <h5>Mirror Temple</h5>
-                            <p class="smaller">Meditate, move, or breathe in a mirrored sanctuary designed for reflection and inner clarity.</p>
-                        </div>
-                        <div class="inner-space">
                             <img src="public/images/icon-theater.svg" alt="The library">
                             <h5>The library</h5>
                             <p class="smaller">Slow down and sink into curated books surrounded by light, silence, and inspiration.</p>
                         </div>
                         <div class="inner-space">
+                            <img src="public/images/icon-gym.svg" alt="The Gym">
+                            <h5>The Gym</h5>
+                            <p class="smaller">Train with purpose in a space centered around a wooden boxing ring—move, strike, transform.</p>
+                        </div>
+                        <div class="inner-space">
                             <img src="public/images/icon-fuego.svg" alt="Restaurant">
-                            <h5>Restaurant</h5>
+                            <h5>Culinary Experience</h5>
                             <p class="smaller">Share meals prepared by a private chef, thoughtfully designed to delight the senses & create meaningful moments.</p>
                         </div>
                         <div class="inner-space">
                             <img src="public/images/icon-equilibrium.svg" alt="Equilibrium Station">
-                            <h5>Equilibrium Station</h5>
+                            <h5>Equilibrium <br> Station</h5>
                             <p class="smaller">Create your own wellness elixirs guided by herbal wisdom, flavors, and intention.</p>
+                        </div>
+                        <div class="inner-space">
+                            <img src="public/images/icon-templo.svg" alt="Mirror Temple">
+                            <h5>Mirror <br> Temple</h5>
+                            <p class="smaller">Meditate, move, or breathe in a mirrored sanctuary designed for reflection and inner clarity.</p>
                         </div>
                         <div class="inner-space">
                             <img src="public/images/icon-pensatorium.svg" alt="Pensatorium">
                             <h5>Pensatorium</h5>
                             <p class="smaller">Gather for honest conversations or quiet moments of shared presence and emotional expansion.</p>
-                        </div>
-                        <div class="inner-space">
-                            <img src="public/images/icon-gym.svg" alt="The Gym">
-                            <h5>The Gym</h5>
-                            <p class="smaller">Train with purpose in a space centered around a wooden boxing ring—move, strike, transform.</p>
                         </div>
                     </div>
                 </div>
@@ -185,7 +200,7 @@
             <div class="action-side">
                 <div class="inner-content">
                     <img src="public/images/rhomb.svg" role="presentation" class="rhomb">
-                    <h3>We’re not opening doors. <i>We’re opening a portal.</i></h3>
+                    <h3>We’re not opening doors. <i>We’re opening a threshold.</i></h3>
                     <a href="#form" class="button">Connect with us</a>
                 </div>
             </div>
@@ -215,13 +230,13 @@
             </div>
         </section>
 
-        <section id="villa">
+        <section id="bookings">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-5">
                         <div class="inner-left-content">
                             <div class="inner-flex">
-                                <h2 class="h1">Bookings <br> & Availability</h2>
+                                <h2 class="h1">Bookings & <br> <i>Availability</i></h2>
                             </div>
                             <div class="inner-flex">
                                 <div class="inner-villa-disclaimer">
@@ -236,64 +251,66 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-7">
-                        <div class="nights-card">
-                            <div class="inner-night-title">
-                                <div class="d-flex justify-content-center">
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">     
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">
+                        <div class="wrapper-nights-card">
+                            <div class="nights-card">
+                                <div class="inner-night-title">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">     
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">
+                                    </div>
+                                    <p class="medium family-behind"><i>3 nights</i></p>
+                                    <h4 class="light-brown">Opening the Threshold</h4>
+                                    <p class="medium">A brief and powerful immersion. <br>The beginning of a deeper way of inhabiting time.</p>
                                 </div>
-                                <p class="medium family-behind"><i>3 nights</i></p>
-                                <h4 class="light-brown">Opening the Threshold</h4>
-                                <p class="medium">A brief and powerful immersion. <br>The beginning of a deeper way of inhabiting time.</p>
-                            </div>
-                            <span class="divider"></span>
-                            <div class="inner-night-details">
-                                <p class="small mb-2">Includes:</p>
-                                <ul>
-                                    <li>Exclusive full-villa stay for you and your group</li>
-                                    <li>Sensory welcome experience</li>
-                                    <li>Daily breakfast + welcome dinner</li>
-                                    <li>Water experience (temazcal or steam)</li>
-                                    <li>Personal welcome kit + journey guide</li>
-                                    <li>Dedicated concierge service</li>
-                                    <li>Daily housekeeping</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="nights-card">
-                            <div class="inner-night-title">
-                                <div class="d-flex justify-content-center">
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">     
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">     
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">
-                                    <img src="public/images/decor-rhomb.svg" role="presentation">
+                                <span class="divider"></span>
+                                <div class="inner-night-details">
+                                    <p class="small mb-2">Includes:</p>
+                                    <ul>
+                                        <li>Exclusive full-villa stay for you and your group</li>
+                                        <li>Sensory welcome experience</li>
+                                        <li>Daily breakfast + welcome dinner</li>
+                                        <li>Water experience (temazcal or steam)</li>
+                                        <li>Personal welcome kit + journey guide</li>
+                                        <li>Dedicated concierge service</li>
+                                        <li>Daily housekeeping</li>
+                                    </ul>
                                 </div>
-                                <p class="medium family-behind"><i>7 nights</i></p>
-                                <h4 class="light-brown">Shamana Stay</h4>
-                                <p class="medium">An extended experience of presence, reconnection, and refinement.</p>
                             </div>
-                            <span class="divider"></span>
-                            <div class="inner-night-details">
-                                <p class="small mb-2">Includes everything from the 3-night journey, plus:</p>
-                                <ul>
-                                    <li>Daily morning yoga sessions</li>
-                                    <li>Personalized meal plan aligned with group intentions <i>(breakfast included, other meals optional)</i></li>
-                                    <li>Evening fire experience</li>
-                                    <li>One spa treatment per guest</li>
-                                    <li>Thoughtful hosting throughout your stay</li>
-                                    <li>First Circle Credential, granting:
-                                        <ul>
-                                            <li>Early access to future stays</li>
-                                            <li>A courtesy experience on your next visit</li>
-                                            <li>Invitations to private moments curated by our team</li>
-                                            <li>Preferential conditions for future bookings</li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                            <div class="nights-card">
+                                <div class="inner-night-title">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">     
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">     
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">
+                                        <img src="public/images/decor-rhomb.svg" role="presentation">
+                                    </div>
+                                    <p class="medium family-behind"><i>7 nights</i></p>
+                                    <h4 class="light-brown">Shamana Stay</h4>
+                                    <p class="medium">An extended experience of presence, reconnection, and refinement.</p>
+                                </div>
+                                <span class="divider"></span>
+                                <div class="inner-night-details">
+                                    <p class="small mb-2">Includes everything from the 3-night journey, plus:</p>
+                                    <ul>
+                                        <li>Daily morning yoga sessions</li>
+                                        <li>Personalized meal plan aligned with group intentions <i>(breakfast included, other meals optional)</i></li>
+                                        <li>Evening fire experience</li>
+                                        <li>One spa treatment per guest</li>
+                                        <li>Thoughtful hosting throughout your stay</li>
+                                        <li>First Circle Credential, granting:
+                                            <ul>
+                                                <li>Early access to future stays</li>
+                                                <li>A courtesy experience on your next visit</li>
+                                                <li>Invitations to private moments curated by our team</li>
+                                                <li>Preferential conditions for future bookings</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -308,24 +325,38 @@
                         <div class="wrapper-form">
                             <div class="inner-border-form"></div>
                             <div class="inner-top-area">
-                                <img src="public/images/lachamana-iso.svg" alt="La Chamana">
-                                <h3>Do you feel the call?</h3>
-                                <p>Leave your details and someone from our team will connect with you personally to begin the journey.</p>
+                                <h3>Be part of this <i>first chapter</i></h3>
+                                <h4 class="light-brown">Leave your details and someone from our team will reach out personally to begin the conversation.</h4>
                             </div>
                             
                             <form action="">
                                 <div class="row-field">
-                                    <input type="text" placeholder="Full Name" required>
+                                    <label for="full-name">
+                                        Full Name
+                                        <input type="text" name="full-name" required>
+                                    </label>
+                                    <label for="email">
+                                        Email
+                                        <input type="email" name="email" required>
+                                    </label>
                                 </div>
                                 <div class="row-field">
-                                    <input type="email" placeholder="Email" required>
-                                    <input type="phone" placeholder="Phone">
+                                    <label for="phone">Phone
+                                        <input type="phone" name="phone">
+                                    </label>
+                                    <label for="date">
+                                        When would you like to come?
+                                        <div class="row-field">
+                                            <input type="text" name="date" id="datepicker-in" autocomplete="off">
+                                            <p class="label">to</p>
+                                            <input type="text" name="date" id="datepicker-out" autocomplete="off">
+                                        </div>
+                                    </label>	
                                 </div>
                                 <div class="row-field">
-                                    <input type="text" placeholder="When would you like to come?" required>
-                                </div>
-                                <div class="row-field">
-                                    <textarea name="" id="" placeholder="Is there anything you'd like to share with us before stepping into this experience?"></textarea>
+                                    <label for="message">Is there anything you'd like to share with us before stepping into this experience?
+                                        <textarea name="message" id=""></textarea>
+                                    </label>
                                 </div>
                                 <div class="row-field">
                                     <div class="wrapper-submit">
@@ -349,16 +380,16 @@
                                 <img src="public/images/lachamana-horizontal.svg" alt="La Chamana">
                             </div>
                             <div class="inner-description">
-                                <p class="small">A sanctuary of silence, of elemental beauty, of ancient memory awakening within.</p>
+                                <p class="small light-brown">A sanctuary of silence, of elemental beauty, of ancient memory awakening within.</p>
                             </div>
                             <div class="inner-social">
-                                <p>learn more at</p>
+                                <p class="h5">learn more at</p>
                                 <div class="inner-social-icons">
                                     <a href="#" target="_blank" rel="noopener noreferrer">
-                                        <img src="public/images/instagram.svg" alt="Instagram">
+                                        <img src="public/images/tiktok.svg" alt="TikTok">
                                     </a>
                                     <a href="#" target="_blank" rel="noopener noreferrer">
-                                        <img src="public/images/instagram.svg" alt="Instagram">
+                                        <img src="public/images/x.svg" alt="X">
                                     </a>
                                     <a href="#" target="_blank" rel="noopener noreferrer">
                                         <img src="public/images/instagram.svg" alt="Instagram">
@@ -374,6 +405,7 @@
 
     <!-- jQuery -->
     <script src="lib/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Dependencias de jquery.i18n -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.messagestore.js"></script>
