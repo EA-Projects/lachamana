@@ -483,7 +483,7 @@ section{
 
 #places{
     padding: 70px 0;
-    background: url('../public/images/places-bg.jpg'), linear-gradient(180deg, #121C13 0%, #081309 100%);
+    background: url('../public/images/places-bg.webp'), linear-gradient(180deg, #121C13 0%, #081309 100%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -537,6 +537,9 @@ section{
             }
         }
     }
+    @media(min-width: 1441px){
+        background-size: 1440px, cover;
+    }
 }
 
 #spaces{
@@ -583,7 +586,7 @@ section{
     .action-side{
         background-color: #121C13;
         padding-left: 30px;
-        background-image: url('../public/images/action-side-image.jpg');
+        background-image: url('../public/images/action-side-image.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -616,7 +619,7 @@ section{
 #gallery{
     padding: 50px 0;
     min-height: 800px;
-    background-image: url('../public/images/gallery-image.jpg');
+    background-image: url('../public/images/gallery-image.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -701,7 +704,7 @@ section{
 #bookings{
     padding: 75px 0;
     min-height: 800px;
-    background-image: url('../public/images/booking-bg.jpg');
+    background-image: url('../public/images/booking-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -781,7 +784,7 @@ section{
 
 #form{
     padding: 135px 0;
-    background-image: url('../public/images/form-image.jpg');
+    background-image: url('../public/images/form-image.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
