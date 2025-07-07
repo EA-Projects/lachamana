@@ -74,7 +74,7 @@ window.addEventListener('load', function () {
   if ($('#reserve-form').length) {
     $(function () {
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbw7D0tksKhH_dxxAN-DubJlPcJIlCccTE2p4Bo-jdKSdXXRCbpduw-kwWFllm0QNNw/exec';
+        'https://script.google.com/macros/s/AKfycbw-0Wz2WHsvbkMslQU7TtJOBQyjSMasu5uXetpxQJqxMhWujjlpAT_XozmCgU2WYdfd/exec';
       const form = document.getElementById('reserve-form');
   
       form.addEventListener('submit', (e) => {
@@ -91,13 +91,13 @@ window.addEventListener('load', function () {
   
         fetch(scriptURL, { method: 'POST', body: formData })
           .then((response) => {
-            $('#success-message').fadeIn();
+            $('#success-message').addClass('visible');
             $('#reserve-form').addClass('readonly');
             $('#reserve-form input.button').val("Submitted");
           })
           .catch((error) => {
             console.error('Error!', error.message);
-            $('#success-message').fadeOut();
+            $('#success-message').removeClass('visible');
             $('#reserve-form').removeClass('readonly');
             $('#reserve-form input.button').val("Submit Information");
           });

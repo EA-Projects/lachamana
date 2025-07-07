@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-56TLH9MQ7H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-56TLH9MQ7H');
+    </script>
+    <!-- Hotjar Tracking Code -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:6455589,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Chamana</title>
@@ -45,7 +65,7 @@
                     <div class="col-12">
                         <div class="inner-top-hero">
                             <div class="inner-flex">
-                                <p class="h5" data-i18n="home.callToActionTitle">Claim your journey</p>
+                                <p class="h5" data-i18n="home.callToActionTitle">Join the first chapter</p>
                                 <a href="#form" class="button" data-i18n="home.callToActionButton">Connect with us</a>
                             </div>
                             <div class="inner-flex">
@@ -62,11 +82,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="inner-content">
-                        <h1 data-i18n="home.title">
-                            You're not choosing <i>where</i> to go. <br>
-                            You're choosing <i>how</i> to be.
-                        </h1>
+                    <div class="col-12">
+                        <div class="inner-content">
+                            <h1 data-i18n="home.title">
+                                You're not choosing <i>where</i> to go. <br>
+                                You're choosing <i>how</i> to be.
+                            </h1>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -120,22 +142,25 @@
                                 <h2 class="h1" data-i18n="places.title">Some places are not <i>visited</i>. They are <i>experienced</i>.</h2>
                                 <h4 class="light-brown" data-i18n="places.description">
                                     La Chamana is a private villa surrounded by the jungle of Tulum, only minutes away from the town’s most beautiful beaches. <br>
-                                    Designed for full-villa stays, it invites you and your group to <i>slow down, reconnect, & live with intention</i>.
+                                    Designed for full-villa stays, it invites you and your group to <i>slow down, reconnect,</i> & <i>live with intention</i>.
                                 </h4>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="inner-place-block">
                                 <img src="public/images/icon-concierge.svg" alt="">
                                 <h5 class="light-brown" data-i18n="places.item1">A dedicated concierge to curate and care for every detail of your journey from start to finish.</h5>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="inner-place-block is-middle">
                                 <img src="public/images/icon-suites.svg" alt="">
-                                <h5 class="light-brown" data-i18n="places.item2">Eight suites. <br> A full house entirely for you.</h5>
+                                <h5 class="light-brown" data-i18n="places.item2">
+                                    Eight suites. A full house entirely for you. <br>
+                                    The services of a petit boutique hotel, only when and how you want them.    
+                                </h5>
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
@@ -176,7 +201,7 @@
                         </div>
                         <div class="inner-space">
                             <img src="public/images/icon-fuego.svg" alt="Restaurant">
-                            <h5>Culinary Experience</h5>
+                            <h5>Culinary <br> Experience</h5>
                             <p class="smaller">Share meals prepared by a private chef, thoughtfully designed to delight the senses & create meaningful moments.</p>
                         </div>
                         <div class="inner-space">
@@ -222,7 +247,14 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="inner-flex">
-                            <h4 class="light-yellow">Enjoy our outstanding facilities with private stays of 3 or 7 nights.</h4>
+                            <div>
+                                <h5 class="light-yellow mb-2">Opening August 1st. Our first stays are fully booked.
+                                </h5>
+                                <h5 class="light-yellow mb-2">Limited dates remain for this first chapter — live La Chamana as your own petit boutique hotel.</h5>
+                                <h5 class="light-yellow mb-2">
+                                    A one-of-a-kind villa for those who value design, architecture, privacy, and curated services — where everything is taken care of, exactly how and when you want it.
+                               </h5>
+                            </div>
                             <a href="#form" class="button">Connect with us</a>
                         </div>
                     </div>
@@ -277,24 +309,33 @@
         <section id="bookings">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-5">
                         <div class="inner-left-content">
-                            <div class="inner-flex">
-                                <h2 class="h1">Bookings & <br> <i>Availability</i></h2>
+                            <div class="">
+                                <h2 class="h1 mb-3">Bookings & <br> <i>Availability</i></h2>
+                                <h5 class="light-yellow mb-2">
+                                    La Chamana is not open yet, but you can be among the first to experience it. <br> We’re currently offering a limited number of inaugural stays, available for confirmed bookings made between June and August 2025.
+                                </h5>
+                                <h5 class="light-yellow mb-2">
+                                    These journeys can be scheduled anytime between August 2025 and July 2026, in dialogue with our team and subject to availability. 
+                                </h5>
+                                <p class="smaller light-brown">*Dates are subject to availability throughout the year and will be curated in dialogue with your group.</p>
                             </div>
                             <div class="inner-flex">
                                 <div class="inner-villa-disclaimer">
                                     <h5 class="light-yellow mb-2">
-                                        We are currently offering two inaugural journeys, available for confirmed bookings made between July and August 2025.
+                                        Extras & Care
                                     </h5>
-                                    <p class="smaller light-brown">
-                                        *Dates are subject to availability throughout the year and will be curated in dialogue with your group.
-                                    </p>
+                                    <ul>
+                                        <li class="light-brown">We welcome groups of all kinds — including families.</li>
+                                        <li class="light-brown">Cribs, high chairs, and thoughtful additions for younger guests are available upon request.</li>
+                                        <li class="light-brown">We’re happy to suggest gentle activities for little ones, aligned with the spirit of your stay.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-7">
                         <div class="wrapper-nights-card">
                             <div class="nights-card">
                                 <div class="inner-night-title">
@@ -303,20 +344,32 @@
                                         <img src="public/images/decor-rhomb.svg" role="presentation">     
                                         <img src="public/images/decor-rhomb.svg" role="presentation">
                                     </div>
-                                    <p class="medium family-behind"><i>3 nights</i></p>
-                                    <h4 class="light-brown">Opening the Threshold</h4>
-                                    <p class="smaller">A brief and powerful immersion. <br>The beginning of a deeper way of inhabiting time.</p>
-                                    <a href="#" class="button">Book now</a>
+                                    <p class="medium family-behind"><i>Three-Day Private Retreat Package</i></p>
+                                    <h4 class="light-brown">Cross the Threshold</h4>
+                                    <p class="smaller">A curated escape designed for presence, pleasure, and reconnection.</p>
+                                    <p class="smaller mb-2">
+                                        <span class="light-brown">USD 9,900 total</span> — exclusive full-villa rental <br>
+                                        <i>8 rooms (double or single occupancy), up to 16 guests.</i>
+                                    </p>
+                                    <p class="smaller">
+                                        Equivalent to <span class="light-brown">$618 per person</span> <i>(based on 16 guests)</i>
+                                        or <span class="light-brown">$1,237 per couple</span> <i>(based on 8 rooms shared)</i>
+                                    </p>
+                                    <div class="mt-4">
+                                        <p class="medium family-behind mb-3">Secure your experience now.</p>
+                                        <a href="#" class="button">Book your private stay</a>
+                                    </div>
                                 </div>
                                 <span class="divider"></span>
                                 <div class="inner-night-details">
-                                    <p class="smaller mb-2">Includes:</p>
+                                    <p class="smaller mb-2">What’s Included:</p>
                                     <ul>
-                                        <li>Exclusive full-villa stay for you and your group</li>
-                                        <li>Sensory welcome experience</li>
-                                        <li>Daily breakfast + welcome dinner</li>
-                                        <li>Water experience (temazcal or steam)</li>
-                                        <li>Personal welcome kit + journey guide</li>
+                                        <li>Private use of the entire villa for you and your group</li>
+                                        <li>8 bedrooms (double or single occupancy)</li>
+                                        <li>Sensory welcome experience upon arrival</li>
+                                        <li>Water ritual — traditional temazcal ceremony guided by local healers</li>
+                                        <li>Private chef at your disposal — ingredients and beverages curated to your taste, sourced locally and charged at cost (estimated at $70–$100 USD per person per day, depending on your selections)</li>
+                                        <li>Personal welcome kit and printed Journey Guide</li>
                                         <li>Dedicated concierge service</li>
                                         <li>Daily housekeeping</li>
                                     </ul>
@@ -333,26 +386,45 @@
                                         <img src="public/images/decor-rhomb.svg" role="presentation">
                                         <img src="public/images/decor-rhomb.svg" role="presentation">
                                     </div>
-                                    <p class="medium family-behind"><i>7 nights</i></p>
-                                    <h4 class="light-brown">Shamana Stay</h4>
-                                    <p class="smaller">An extended experience of presence, reconnection, and refinement.</p>
-                                    <a href="#" class="button">Book now</a>
+                                    <p class="medium family-behind"><i>La Chamana Stay – 7 Nights</i></p>
+                                    <h4 class="light-brown">Deepen the Threshold</h4>
+                                    <p class="smaller">An extended immersion into presence, reconnection, and refinement.</p>
+                                    <p class="smaller mb-2">
+                                        <span class="light-brown">USD 19,900 total</span> — exclusive full-villa rental <br>
+                                        <i>8 rooms (double or single occupancy), up to 16 guests.</i>
+                                    </p>
+                                    <p class="smaller">
+                                        Equivalent to <span class="light-brown">$1,244 per person</span> <i>(based on 16 guests)</i>
+                                        or <span class="light-brown">$2,488 per couple</span> <i>(based on 8 rooms shared)</i>
+                                    </p>
+                                    <div class="mt-4">
+                                        <p class="medium family-behind mb-3">Let this be your week of reconnection.</p>
+                                        <a href="#" class="button">Book your private stay</a>
+                                    </div>
                                 </div>
                                 <span class="divider"></span>
                                 <div class="inner-night-details">
-                                    <p class="small mb-2">Includes everything from the 3-night journey, plus:</p>
+                                    <p class="small mb-2">What’s Included</p>
                                     <ul>
+                                        <li>Private use of the entire villa for 7 nights</li>
+                                        <li>8 bedrooms (double or single occupancy)</li>
+                                        <li>Round-trip airport transfer for up to 16 guests (private van)</li>
+                                        <li>Sensory welcome experience upon arrival</li>
                                         <li>Daily morning yoga sessions</li>
-                                        <li>Personalized meal plan aligned with group intentions <i>(breakfast included, other meals optional)</i></li>
-                                        <li>Evening fire experience</li>
+                                        <li>Evening fire ritual or sunset sound healing (your choice)</li>
                                         <li>One spa treatment per guest</li>
-                                        <li>Thoughtful hosting throughout your stay</li>
-                                        <li>First Circle Credential, granting:
+                                        <li>Temazcal ceremony guided by local healers</li>
+                                        <li>Private chef at your disposal — ingredients and beverages curated to your taste, sourced locally and charged at cost (estimated at $70-$100 USD per person per day, depending on your selections)</li>
+                                        <li>Personal welcome kit and printed Journey Guide</li>
+                                        <li>Dedicated concierge service</li>
+                                        <li>Daily housekeeping</li>
+                                        <p class="small mt-2">First Circle Credential</p>
+                                        <li>As a First Circle guest, you’ll receive:
                                             <ul>
                                                 <li>Early access to future stays</li>
-                                                <li>A courtesy experience on your next visit</li>
-                                                <li>Invitations to private moments curated by our team</li>
-                                                <li>Preferential conditions for future bookings</li>
+                                                <li>A complimentary experience on your next visit</li>
+                                                <li>Invitations to private gatherings curated by our team in future locations</li>
+                                                <li>Preferential conditions for upcoming bookings</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -419,6 +491,9 @@
                                     </div>
                                     <h3>Thank you for your request!</h3>
                                     <p class="light-yellow">Someone from our team will reach out personally to begin the conversation.</p>
+                                </div>
+                                <div>
+
                                 </div>
                             </div>
                         </div>
