@@ -9052,7 +9052,7 @@ h2, .h2 {
 }
 @media (max-width: 575px) {
   h2, .h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
 
@@ -9067,11 +9067,6 @@ h3, .h3 {
 @media (max-width: 575px) {
   h3, .h3 {
     font-size: 26px;
-  }
-}
-@media (max-width: 425px) {
-  h3, .h3 {
-    font-size: 22px;
   }
 }
 
@@ -9101,11 +9096,6 @@ h5, .h5 {
   color: #FFFFFF;
   letter-spacing: 0.02em;
   margin: 0;
-}
-@media (max-width: 7675px) {
-  h5, .h5 {
-    font-size: 16px;
-  }
 }
 
 h6,
@@ -9269,6 +9259,12 @@ ul li ul li:first-child {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+}
+@media (max-width: 575px) {
+  .button {
+    font-size: 12px;
+    padding: 13px 30px 12px;
+  }
 }
 
 .wrapper-site {
@@ -9584,6 +9580,8 @@ section {
     display: none;
   }
   #hero .inner-bottom-hero {
+    max-width: 300px;
+    margin: 0 auto;
     opacity: 0.8;
   }
 }
@@ -9788,8 +9786,14 @@ section {
   }
 }
 @media (max-width: 425px) {
+  #places {
+    padding: 35px 25px;
+  }
   #places .inner-holder-content {
     padding: 40px 0;
+  }
+  #places .inner-holder-content .inner-place-block img {
+    max-width: 55px;
   }
 }
 
@@ -9911,7 +9915,6 @@ section {
   #spaces .spaces-side .inner-content h2 {
     max-width: 600px;
     margin: 0 auto;
-    text-align: center;
   }
   #spaces .spaces-side .inner-content .inner-spaces {
     margin-top: 40px;
@@ -10082,8 +10085,8 @@ section {
     position: absolute;
     inset: 0;
     margin: 0 auto;
-    background: #000000;
-    opacity: 0.6;
+    background: #0F1301;
+    opacity: 0.8;
     pointer-events: none;
   }
   #gallery .container {
@@ -10226,12 +10229,11 @@ section {
     position: absolute;
     inset: 0;
     margin: 0 auto;
-    background: #000000;
-    opacity: 0.6;
+    background: #0F1301;
+    opacity: 0.8;
     pointer-events: none;
   }
   #bookings .inner-left-content {
-    text-align: center;
     margin-bottom: 40px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -10294,7 +10296,7 @@ section {
   opacity: 0;
 }
 #form .wrapper-form {
-  max-width: 600px;
+  max-width: 740px;
   margin: 0 auto;
   border-radius: 8px;
   padding: 50px 20px;
@@ -10350,7 +10352,7 @@ section {
   position: relative;
 }
 #form .wrapper-form .wrapper-reserve-area form {
-  max-width: 490px;
+  max-width: 600px;
   margin: 0 auto;
 }
 #form .wrapper-form .wrapper-reserve-area form .row-field {
@@ -10375,6 +10377,7 @@ section {
   width: 100%;
 }
 #form .wrapper-form .wrapper-reserve-area form input:not(.button),
+#form .wrapper-form .wrapper-reserve-area form select,
 #form .wrapper-form .wrapper-reserve-area form textarea {
   background-color: #121C13;
   border: 1px solid #342A1F;
@@ -10382,28 +10385,30 @@ section {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 8px 14px;
+  padding: 8px 10px;
   color: #FFFFFF;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-webkit-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-webkit-input-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-webkit-input-placeholder, #form .wrapper-form .wrapper-reserve-area form select::-webkit-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-webkit-input-placeholder {
   color: #9C937C;
 }
-#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-moz-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-moz-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-moz-placeholder, #form .wrapper-form .wrapper-reserve-area form select::-moz-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-moz-placeholder {
   color: #9C937C;
 }
-#form .wrapper-form .wrapper-reserve-area form input:not(.button):-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea:-ms-input-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button):-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form select:-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea:-ms-input-placeholder {
   color: #9C937C;
 }
-#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-ms-input-placeholder {
+#form .wrapper-form .wrapper-reserve-area form input:not(.button)::-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form select::-ms-input-placeholder, #form .wrapper-form .wrapper-reserve-area form textarea::-ms-input-placeholder {
   color: #9C937C;
 }
 #form .wrapper-form .wrapper-reserve-area form input:not(.button)::placeholder,
+#form .wrapper-form .wrapper-reserve-area form select::placeholder,
 #form .wrapper-form .wrapper-reserve-area form textarea::placeholder {
   color: #9C937C;
 }
 #form .wrapper-form .wrapper-reserve-area form input:not(.button):hover,
+#form .wrapper-form .wrapper-reserve-area form select:hover,
 #form .wrapper-form .wrapper-reserve-area form textarea:hover {
   border: 1px solid rgba(201, 169, 95, 0.3);
 }
@@ -10413,8 +10418,12 @@ section {
   background-size: 12px;
   background-repeat: no-repeat;
 }
+#form .wrapper-form .wrapper-reserve-area form select {
+  margin-top: 5px;
+  width: 100%;
+}
 #form .wrapper-form .wrapper-reserve-area form textarea {
-  min-height: 120px;
+  min-height: 70px;
   resize: none;
 }
 #form .wrapper-form .wrapper-reserve-area form .label,
@@ -10447,7 +10456,7 @@ section {
   pointer-events: none;
   inset: 0;
   background: url("../public/images/button-rhomb.svg"), url("../public/images/button-rhomb.svg");
-  background-position: 5% center, 93% center;
+  background-position: 8% center, 92% center;
   background-size: 5px, 5px;
   background-repeat: no-repeat, no-repeat;
 }
@@ -10524,6 +10533,30 @@ section {
   opacity: 1;
   visibility: visible;
 }
+#form .wrapper-form .wrapper-reserve-area .bottom-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#form .wrapper-form .wrapper-reserve-area .bottom-form .or-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px 0;
+  gap: 8px;
+}
+#form .wrapper-form .wrapper-reserve-area .bottom-form .or-area span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 1px;
+  background-color: #342A1F;
+}
 @media (min-width: 1441px) {
   #form {
     background-size: 1600px;
@@ -10533,13 +10566,19 @@ section {
   }
 }
 @media (max-width: 575px) {
+  #form {
+    padding: 50px 0;
+  }
+  #form .wrapper-form {
+    padding: 40px 30px;
+  }
   #form .wrapper-form .inner-top-area::before, #form .wrapper-form .inner-top-area::after {
     top: 4px;
-    left: 0;
+    left: -10px;
   }
   #form .wrapper-form .inner-top-area::after {
     left: auto;
-    right: 0;
+    right: -10px;
   }
 }
 @media (max-width: 425px) {

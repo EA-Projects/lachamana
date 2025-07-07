@@ -58,7 +58,7 @@ h2, .h2{
         font-size: 32px;
     }
     @media (max-width: 575px){
-        font-size: 26px;
+        font-size: 30px;
     }
 }
 
@@ -71,9 +71,6 @@ h3, .h3{
     margin: 0;
     @media (max-width: 575px){
         font-size: 26px;
-    }
-    @media (max-width: 425px){
-        font-size: 22px;
     }
 }
 
@@ -99,9 +96,6 @@ h5, .h5{
     color: $white;
     letter-spacing: 0.02em;
     margin: 0;
-    @media (max-width: 7675px){
-        font-size: 16px;
-    }
 }
 
 h6,
@@ -263,6 +257,10 @@ ul{
         box-shadow: none;
         outline: none;
     }  
+    @media (max-width: 575px){
+        font-size: 12px;
+        padding: 13px 30px 12px;
+    }
 }
 
 .wrapper-site{
@@ -530,6 +528,8 @@ section{
             }
         }
         .inner-bottom-hero{
+            max-width: 300px;
+            margin: 0 auto;
             opacity: .8;
         }
     } 
@@ -722,8 +722,14 @@ section{
         }
     }
     @media (max-width: 425px){
+        padding: 35px 25px;
         .inner-holder-content{
             padding: 40px 0;
+            .inner-place-block{
+                img{
+                    max-width: 55px;
+                }
+            }
         }
     }
 }
@@ -817,7 +823,6 @@ section{
                 h2{
                     max-width: 600px;
                     margin: 0 auto;
-                    text-align: center;
                 }
                 .inner-spaces{
                     margin-top: 40px;
@@ -972,8 +977,8 @@ section{
             position: absolute;
             inset: 0;
             margin: 0 auto;
-            background:  #000000;
-            opacity: .6;
+            background:  $dark;
+            opacity: .8;
             pointer-events: none;
         }
         .container{
@@ -1088,12 +1093,11 @@ section{
             position: absolute;
             inset: 0;
             margin: 0 auto;
-            background:  #000000;
-            opacity: .6;
+            background:  $dark;
+            opacity: .8;
             pointer-events: none;
         }
         .inner-left-content{
-            text-align: center;
             margin-bottom: 40px;
             justify-content: start;
             align-items: start;
@@ -1150,7 +1154,7 @@ section{
         opacity: 0;
     }
     .wrapper-form{
-        max-width: 600px;
+        max-width: 740px;
         margin: 0 auto;
         border-radius: 8px;
         padding: 50px 20px; 
@@ -1203,7 +1207,7 @@ section{
         .wrapper-reserve-area{
             position: relative;
             form{
-                max-width: 490px;
+                max-width: 600px;
                 margin: 0 auto;
                 .row-field{
                     display: flex;
@@ -1221,13 +1225,14 @@ section{
                     }
                 }
                 input:not(.button),
+                select,
                 textarea{
                     background-color: #121C13;
                     border: 1px solid $border-brown;
                     border-radius: 4px;
                     outline: 0;
                     box-shadow: none;
-                    padding: 8px 14px;
+                    padding: 8px 10px;
                     color: $white;
                     transition: all .3s ease-in-out;
                     &::placeholder{
@@ -1243,8 +1248,12 @@ section{
                     background-size: 12px;
                     background-repeat: no-repeat;
                 }
+                select{
+                    margin-top: 5px;
+                    width: 100%;
+                }
                 textarea{
-                    min-height: 120px;
+                    min-height: 70px;
                     resize: none;
                 }
                 .label,
@@ -1275,7 +1284,7 @@ section{
                         pointer-events: none;
                         inset: 0;
                         background: url('../public/images/button-rhomb.svg'), url('../public/images/button-rhomb.svg');
-                        background-position: 5% center, 93% center;
+                        background-position: 8% center, 92% center;
                         background-size: 5px, 5px;
                         background-repeat: no-repeat, no-repeat;
                     }
@@ -1342,6 +1351,22 @@ section{
                     visibility: visible;
                 }
             }
+            .bottom-form{
+                max-width: 600px;
+                margin: 0 auto;
+                .or-area{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 25px 0;
+                    gap: 8px;
+                    span{
+                        flex: 1;
+                        height: 1px;
+                        background-color: $border-brown;
+                    }
+                }
+            }
         }
     }
     @media(min-width: 1441px){
@@ -1351,16 +1376,18 @@ section{
         }
     }
     @media (max-width: 575px){
+        padding: 50px 0;
         .wrapper-form{
+            padding: 40px 30px;
             .inner-top-area{
                 &::before,
                 &::after{
                     top: 4px;
-                    left: 0;
+                    left: -10px;
                 }
                 &::after{
                     left: auto;
-                    right: 0;
+                    right: -10px;
                 }
             }
         }
