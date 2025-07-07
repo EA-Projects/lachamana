@@ -47,6 +47,19 @@ function loadLanguage(lang) {
 
 // Inicialización al cargar la página
 window.addEventListener('load', function () {
+  // Play and pause full video when users open the modal
+  var $video = $('#inner-full-video');
+
+  $('#videoPreviewModal').on('shown.bs.modal', function () {
+    $video.get(0).currentTime = 0;
+    $video.get(0).play();
+  });
+
+  $('#videoPreviewModal').on('hidden.bs.modal', function () {
+    $video.get(0).pause();
+    $video.get(0).currentTime = 0; 
+  });
+
   const savedLang = localStorage.getItem('lang') || navigator.language.slice(0, 2);
   const initialLang = savedLang === 'es' ? 'es' : 'en';
 

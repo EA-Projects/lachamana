@@ -9306,6 +9306,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #0F1301;
 }
 #hero::after, #hero::before {
   content: "";
@@ -9314,7 +9315,7 @@ section {
   opacity: 90%;
   background: -webkit-gradient(linear, left bottom, left top, from(#0B0D02), color-stop(35%, rgba(11, 13, 2, 0.35)), color-stop(45%, rgba(11, 13, 2, 0.25)), color-stop(55%, rgba(11, 13, 2, 0.2)), color-stop(65%, rgba(11, 13, 2, 0.35)), to(#0B0D02));
   background: linear-gradient(0deg, #0B0D02 0%, rgba(11, 13, 2, 0.35) 35%, rgba(11, 13, 2, 0.25) 45%, rgba(11, 13, 2, 0.2) 55%, rgba(11, 13, 2, 0.35) 65%, #0B0D02 100%);
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }
 #hero::after {
@@ -9330,7 +9331,7 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
+  z-index: 1;
 }
 #hero .chamana-text {
   position: absolute;
@@ -9764,6 +9765,7 @@ section {
   max-width: 270px;
 }
 #places .inner-holder-content .inner-place-block.is-middle {
+  padding: 0 20px;
   border-left: 1px solid #342A1F;
   border-right: 1px solid #342A1F;
 }
@@ -9774,6 +9776,7 @@ section {
 }
 @media (max-width: 767px) {
   #places .inner-holder-content .inner-place-block.is-middle {
+    padding: 0;
     border-left: 0;
     border-right: 0;
   }
@@ -10145,9 +10148,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-#bookings .inner-left-content > div {
-  max-width: 500px;
+  max-width: 350px;
 }
 #bookings .inner-flex {
   width: 100%;
@@ -10294,9 +10295,8 @@ section {
         -ms-flex-align: start;
             align-items: start;
     gap: 20px;
-  }
-  #bookings .inner-left-content > div {
-    margin: 0 auto;
+    max-width: 500px;
+    margin: 0 auto 40px;
   }
   #bookings .inner-left-content > div ul {
     text-align: left;
@@ -10479,8 +10479,16 @@ section {
   background-repeat: no-repeat;
 }
 #form .wrapper-form .wrapper-reserve-area form select {
+  color: #9C937C;
   margin-top: 5px;
   width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../public/images/icon-expand.svg");
+  background-position: 95% center;
+  background-size: 10px;
+  background-repeat: no-repeat;
 }
 #form .wrapper-form .wrapper-reserve-area form textarea {
   min-height: 70px;

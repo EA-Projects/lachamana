@@ -57,7 +57,7 @@
         <section id="hero">
             <img src="public/images/la-chamana-text.svg" alt="La Chamana" class="chamana-text">
             <video class="video-background" autoplay muted loop playsinline>
-                <source src="public/lachamana-hero.mp4" type="video/mp4">
+                <source src="public/la-chamana-hero.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="container">
@@ -105,7 +105,7 @@
                             <div class="inner-video-preview" type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoPreviewModal">
                                 <div class="inner-video-holder">
                                     <video class="video-preview" autoplay muted loop playsinline>
-                                        <source src="public/lachamana-preview.mp4" type="video/mp4">
+                                        <source src="public/la-chamana-preview.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                     <img src="public/images/play-video.svg" class="play-icon" role="presentation">
@@ -124,8 +124,8 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <video class="video-preview" autoplay muted loop playsinline>
-                            <source src="public/lachamana-hero.mp4" type="video/mp4">
+                        <video id="inner-full-video" class="video-preview" controls playsinline>
+                            <source src="public/la-chamana-full.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -281,6 +281,18 @@
                                 </div>
                                 <div class="carousel-item">
                                     <img src="public/images/gallery/gallery-slide-4.webp" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/images/gallery/gallery-slide-5.webp" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/images/gallery/gallery-slide-6.webp" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/images/gallery/gallery-slide-7.webp" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/images/gallery/gallery-slide-8.webp" alt="">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -456,11 +468,11 @@
                                 <form id="reserve-form" action="">
                                     <div class="row-field">
                                         <label for="full-name">
-                                            Full Name
+                                            Full Name *
                                             <input type="text" name="full-name" required>
                                         </label>
                                         <label for="email">
-                                            Email
+                                            Email *
                                             <input type="email" name="email" required>
                                         </label>
                                         <label for="phone">Phone
