@@ -10110,7 +10110,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  max-width: 1600px;
+  max-width: 1950px;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #000000), color-stop(33%, rgba(0, 0, 0, 0)), color-stop(66%, rgba(0, 0, 0, 0)), color-stop(90%, #000000));
   background: linear-gradient(90deg, #000000 10%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, #000000 90%);
@@ -10214,7 +10214,7 @@ section {
 }
 @media (min-width: 1441px) {
   #bookings {
-    background-size: 1600px;
+    background-size: auto 100%;
   }
   #bookings::after {
     opacity: 1;

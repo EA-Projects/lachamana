@@ -1001,7 +1001,7 @@ section{
         content: "";
         position: absolute;
         inset: 0;
-        max-width: 1600px;
+        max-width: 1950px;
         margin: 0 auto;
         background: linear-gradient(90deg, #000000 10%, #00000000 33%, #00000000 66%, #000000 90%);
         pointer-events: none;
@@ -1077,7 +1077,7 @@ section{
         }
     }
     @media(min-width: 1441px){
-        background-size: 1600px;
+        background-size: auto 100%;
         &::after{
             opacity: 1;
         }
