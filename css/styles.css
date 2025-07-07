@@ -9151,6 +9151,10 @@ p.large, .p.large {
   color: #0F1301;
 }
 
+.green {
+  color: #F5C03D;
+}
+
 .light-green {
   color: #D8CEB7;
 }
@@ -10192,26 +10196,45 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 25px;
 }
 #bookings .wrapper-nights-card .nights-card .inner-night-title {
   width: 100%;
   text-align: center;
   min-width: 265px;
   max-width: 265px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
 }
-#bookings .wrapper-nights-card .nights-card .inner-night-title .d-flex {
+#bookings .wrapper-nights-card .nights-card .inner-night-title .top-area .d-flex {
   gap: 3px;
   margin-bottom: 15px;
 }
-#bookings .wrapper-nights-card .nights-card .inner-night-title h4 {
-  margin-bottom: 15px;
-}
-#bookings .wrapper-nights-card .nights-card .inner-night-title p {
+#bookings .wrapper-nights-card .nights-card .inner-night-title .top-area h3 {
+  margin-top: 5px;
   margin-bottom: 10px;
+}
+#bookings .wrapper-nights-card .nights-card .inner-night-title .bottom-area {
+  margin-top: 40px;
+}
+#bookings .wrapper-nights-card .nights-card .inner-night-title .bottom-area .divider-large {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #342A1F;
+  margin: 15px 0;
 }
 #bookings .wrapper-nights-card .nights-card .divider {
   -ms-flex-item-align: stretch;
@@ -10219,6 +10242,30 @@ section {
       align-self: stretch;
   width: 1px;
   background-color: #342A1F;
+}
+#bookings .wrapper-nights-card .nights-card .inner-night-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+#bookings .wrapper-nights-card .nights-card .inner-night-details .bottom-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (min-width: 1441px) {
   #bookings {
@@ -10279,6 +10326,14 @@ section {
   }
   #bookings .wrapper-nights-card .nights-card .inner-night-title {
     max-width: none;
+  }
+  #bookings .wrapper-nights-card .nights-card .inner-night-details .bottom-detail {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
   }
 }
 

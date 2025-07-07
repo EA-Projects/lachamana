@@ -148,6 +148,10 @@ p, .p{
     color: $dark
 }
 
+.green{
+    color: $green;
+}
+
 .light-green{
     color: $light-green;
 }
@@ -1051,7 +1055,6 @@ section{
         gap: 30px;
         .nights-card{
             width: 100%;
-            // max-width: 650px;
             margin: 0 0 0 auto;
             padding: 30px;
             background-color: rgba(11, 13, 2, 0.8);
@@ -1059,28 +1062,53 @@ section{
             border-radius: 8px;
             backdrop-filter: blur(5px);
             display: flex;
-            align-items: center;
-            gap: 30px;
+            align-items: stretch;
+            gap: 25px;
             .inner-night-title{
                 width: 100%;
                 text-align: center;
                 min-width: 265px;
                 max-width: 265px;
-                .d-flex{
-                    gap: 3px;
-                    margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 0;
+                .top-area{
+                    .d-flex{
+                        gap: 3px;
+                        margin-bottom: 15px;
+                    }
+                    h3{
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
                 }
-                h4{
-                    margin-bottom: 15px;
-                }
-                p{
-                    margin-bottom: 10px;
+                .bottom-area{
+                    margin-top: 40px;
+                    .divider-large{
+                        display: block;
+                        height: 1px;
+                        width: 100%;
+                        background-color: $border-brown; 
+                        margin: 15px 0;
+                    }
                 }
             }
             .divider{
                 align-self: stretch;
                 width: 1px;
                 background-color: $border-brown;
+            }
+            .inner-night-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 30px;
+                .bottom-detail{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
             }
         }
     }
@@ -1134,6 +1162,13 @@ section{
                 }
                 .inner-night-title{
                     max-width: none;
+                }
+                .inner-night-details{
+                    .bottom-detail{
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 10px;
+                    }
                 }
             }
         }
