@@ -9579,7 +9579,8 @@ section {
     max-width: 100px;
   }
   #hero .inner-content {
-    margin: 60px 0 80px;
+    margin: 60px auto 80px;
+    max-width: 300px;
   }
   #hero .inner-content h1 br {
     display: none;
@@ -9961,7 +9962,7 @@ section {
     min-height: 400px;
   }
   #spaces .action-side .inner-content h3 {
-    max-width: 250px;
+    max-width: 290px;
   }
 }
 
