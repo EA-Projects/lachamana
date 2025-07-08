@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.xxxxxxxxxx.com/sitemap.xml
-Host: https://www.xxxxxxxxxx.com/
+Sitemap: https://www.chamana.live/sitemap.xml
+Host: https://www.chamana.live/

@@ -1,4 +1,4 @@
-// Función para aplanar objetos anidados
+// Function to flatten objects
 function flattenObject(obj, parent = '', res = {}) {
   for (let key in obj) {
     if (!obj.hasOwnProperty(key)) continue;
@@ -12,40 +12,46 @@ function flattenObject(obj, parent = '', res = {}) {
   return res;
 }
 
-// Función principal para cargar el idioma
+// Function to load the language
 function loadLanguage(lang) {
   $.i18n().locale = lang;
 
-  // Cargar el archivo JSON y aplanarlo
+  // Load JSON to flatten
   $.getJSON(`/locales/${lang}.json`, function (data) {
     const flatData = flattenObject(data);
 
     $.i18n().load({ [lang]: flatData }).done(function () {
-      // Aplicar traducciones a cada elemento
+      // Apply translations to elements
       $('[data-i18n]').each(function () {
         const key = $(this).data('i18n');
         const translation = $.i18n(key);
         $(this).html(translation || `[${key}]`);
       });
 
-      // Aplicar traducciones a placeholders
+      // Apply translations to placeholders
       $('[data-i18n-placeholder]').each(function () {
          const key = $(this).data('i18n-placeholder');
          const translation = $.i18n(key);
          $(this).attr('placeholder', translation || `[${key}]`);
       });
 
-      // Marcar botón activo
+       // Apply translations to values
+      $('[data-i18n-value]').each(function () {
+        const key = $(this).data('i18n-value');
+        const translation = $.i18n(key);
+        $(this).attr('value', translation || `[${key}]`);
+      });
+
+      // Set button active
       $('.lang-button').removeClass('active');
       $(`.lang-button[data-lang="${lang}"]`).addClass('active');
 
-      // Guardar en localStorage
+      // Save in localStorage 
       localStorage.setItem('lang', lang);
     });
   });
 }
 
-// Inicialización al cargar la página
 window.addEventListener('load', function () {
   // Play and pause full video when users open the modal
   var $video = $('#inner-full-video');
@@ -65,7 +71,7 @@ window.addEventListener('load', function () {
 
   loadLanguage(initialLang);
 
-  // Evento al hacer clic en botones de idioma
+  // Function to change language
   $('.lang-button').on('click', function () {
     const lang = $(this).data('lang');
     loadLanguage(lang);
