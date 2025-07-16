@@ -9090,6 +9090,9 @@ h4, .h4 {
   h4, .h4 {
     font-size: 16px;
   }
+  h4.medium, .h4.medium {
+    font-size: 18px;
+  }
 }
 
 h5, .h5 {
@@ -9099,6 +9102,11 @@ h5, .h5 {
   color: #FFFFFF;
   letter-spacing: 0.02em;
   margin: 0;
+}
+@media (max-width: 575px) {
+  h5, .h5 {
+    font-size: 16px;
+  }
 }
 
 h6,
@@ -9586,8 +9594,8 @@ section {
     min-height: auto;
   }
   #hero::after {
-    background: -webkit-gradient(linear, left bottom, left top, from(#D8CEB7), color-stop(45%, rgba(216, 206, 183, 0.1176470588)), to(rgba(216, 206, 183, 0)));
-    background: linear-gradient(0deg, #D8CEB7 0%, rgba(216, 206, 183, 0.1176470588) 45%, rgba(216, 206, 183, 0) 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#D8CEB7), color-stop(15%, rgba(216, 206, 183, 0.9)), color-stop(20%, rgba(216, 206, 183, 0.8)), color-stop(25%, rgba(216, 206, 183, 0.7)), color-stop(30%, rgba(216, 206, 183, 0.6)), color-stop(45%, rgba(216, 206, 183, 0)));
+    background: linear-gradient(0deg, #D8CEB7 0%, rgba(216, 206, 183, 0.9) 15%, rgba(216, 206, 183, 0.8) 20%, rgba(216, 206, 183, 0.7) 25%, rgba(216, 206, 183, 0.6) 30%, rgba(216, 206, 183, 0) 45%);
   }
   #hero .container {
     min-height: auto;
@@ -10751,8 +10759,12 @@ section {
     max-width: 380px;
     margin: 0 auto 40px;
   }
+  #form .inner-top-area p.smaller {
+    max-width: 320px;
+    margin: 0 auto;
+  }
   #form .guide-block {
-    padding: 30px 10px;
+    padding: 30px 10px 40px;
   }
   #form .guide-block .inner-content img.rhomb {
     margin-bottom: 40px;

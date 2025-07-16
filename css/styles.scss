@@ -90,6 +90,9 @@ h4, .h4{
     }
     @media (max-width: 575px){
         font-size: 16px;
+        &.medium{
+            font-size: 18px;
+        }
     }
 }
 
@@ -100,6 +103,9 @@ h5, .h5{
     color: $white;
     letter-spacing: 0.02em;
     margin: 0;
+    @media (max-width: 575px){
+        font-size: 16px;
+    }
 }
 
 h6,
@@ -533,8 +539,11 @@ section{
         &::after{
             background: linear-gradient(0deg, 
             #D8CEB7 0%, 
-            #d8ceb71e 45%,
-            #d8ceb700 100%
+            rgba(216, 206, 183, .9) 15%,
+            rgba(216, 206, 183, .8) 20%,
+            rgba(216, 206, 183, .7) 25%,
+            rgba(216, 206, 183, .6) 30%, 
+            rgba(216, 206, 183, 0) 45%
             );
         }
         .container{
@@ -1513,9 +1522,13 @@ section{
         .inner-top-area{
             max-width: 380px;
             margin: 0 auto 40px;
+            p.smaller{
+                max-width: 320px;
+                margin: 0 auto;
+            }
         }
         .guide-block{
-            padding: 30px 10px;
+            padding: 30px 10px 40px;
             .inner-content{
                 img.rhomb{
                     margin-bottom: 40px;
