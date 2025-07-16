@@ -136,7 +136,10 @@ p, .p{
         font-size: 13px;
     }
     &.large{
-        font-size: 18px;
+        font-size: 19px;
+        @media(max-width: 480px){
+            font-size: 16px;
+        }
     }
 }
 
@@ -269,6 +272,13 @@ ul{
         box-shadow: none;
         outline: none;
     }  
+    &.secondary{
+        color: $white;
+        background: linear-gradient(180deg, #264B2B 0%, #3D6442 100%);
+        &::before{
+            border-color: #57693F;
+        }
+    }
 }
 
 .wrapper-site{
@@ -319,11 +329,16 @@ section{
         pointer-events: none;
     }
     &::after{
+        height: 130%;
+        top: -30%;
         opacity: 100%;
         background: linear-gradient(0deg, 
         #D8CEB7 0%, 
-        #d8ceb710 35%,
-        #d8ceb700 100%
+        rgba(216, 206, 183, .8) 15%,
+        rgba(216, 206, 183, .6) 20%,
+        rgba(216, 206, 183, .4) 25%,
+        rgba(216, 206, 183, .2) 30%, 
+        rgba(216, 206, 183, 0) 45%
         );
     }
     .video-background{
@@ -335,6 +350,7 @@ section{
         object-fit: cover;
         z-index: 1;
         pointer-events: none;
+        // opacity: 0;
     }
     .chamana-text{
         position: absolute;
@@ -512,7 +528,7 @@ section{
             }
         }     
     }  
-    @media (max-width: 425px){
+    @media (max-width: 480px){
         min-height: auto;
         &::after{
             background: linear-gradient(0deg, 
@@ -1192,13 +1208,14 @@ section{
     padding: 135px 0 100px;
     background-color: #D8CEB7;
     .inner-top-area{
+        margin: 0 auto 60px;
         text-align: center;
-        margin-bottom: 60px;
         h2{
             margin-bottom: 20px;
         }
-        .h4{
-            margin-bottom: 10px;
+        p.large{
+            max-width: 800px;
+            margin: 0 auto 10px;
         }
         .smaller{
             color: #706854;
@@ -1226,6 +1243,10 @@ section{
             margin: 0 auto;
             text-align: center;
             img{
+                display: block;
+                margin: 0 auto 15px;
+            }
+            img.rhomb{
                 margin-bottom: 60px;
             }
             h3{
@@ -1294,7 +1315,7 @@ section{
                 select,
                 textarea{
                     background-color: #1A321D;
-                    border: 1px solid $border-brown;
+                    border: 1px solid #f5c13d22;
                     border-radius: 4px;
                     outline: 0;
                     box-shadow: none;
@@ -1382,7 +1403,7 @@ section{
             }
             .bottom-form{
                 transition: all .4s ease-in-out;
-                max-width: 410px;
+                max-width: 390px;
                 margin: 0 auto;
                 text-align: center;
                 .or-area{
@@ -1449,14 +1470,23 @@ section{
         align-items: center;
         justify-content: center;
         gap: 20px;
-        .h4{
-            color: #706854;
-            i{
-                color: $dark-green;
-            }
+        p{
+            color: $dark-green;
         }
         a{
-            color: $dark-green;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $dark-green;
+            border-radius: 50%;
+            color: $green;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background: $green;
+                color: $dark-green;
+            }
         }
     }
     @media (max-width: 991px){
@@ -1465,20 +1495,29 @@ section{
             margin-bottom: 20px;
         }
     }
-    @media (max-width: 575px){
-        padding: 70px 0;
+    @media(max-width: 767px){
         .bottom-reservation{
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+            max-width: 510px;
+            margin: 50px auto 0;
+            justify-content: space-between;
             gap: 10px;
+            p{
+                max-width: 80%;
+            }
         }
     }
-    @media (max-width: 425px){
+    @media (max-width: 575px){
+        padding: 70px 0;
+    }
+    @media (max-width: 480px){
+        .inner-top-area{
+            max-width: 380px;
+            margin: 0 auto 40px;
+        }
         .guide-block{
             padding: 30px 10px;
             .inner-content{
-                img{
+                img.rhomb{
                     margin-bottom: 40px;
                 }
                 p{
@@ -1493,22 +1532,7 @@ section{
             .inner-border-form{
                 padding: 30px 20px;
             }
-            .wrapper-reserve-area{
-                form{
-                    .wrapper-submit,
-                    input.button{
-                        width: 100%;
-                    }
-                }
-                .bottom-form{
-                    .button{
-                        display: block;
-                        width: 100%;
-                    }
-                }
-            }
         }
-
     }
 }
 

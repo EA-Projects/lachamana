@@ -109,7 +109,7 @@
     "guideTitle": "Entrá antes de llegar",
     "guideDescription": "Nuestra guía te invita a descubrir de cerca los espacios, elementos e intenciones que dan forma a tu estadía.",
     "guideButton": "Descargar la Guía de Experiencia",
-    "guideLink": "/Guide-ES.pdf",
+    "guideLink": "/booklet-es.pdf",
     "formTitle": "Compartí tus datos para comenzar la conversación",
     "fullNameLabel": "Nombre completo *",
     "emailLabel": "Email *",
@@ -121,6 +121,6 @@
       "title": "¡Gracias por tu solicitud!",
       "description": "Alguien de nuestro equipo se pondrá en contacto personalmente para comenzar la conversación."
     },
-    "socialAction": "Para atisbar la energía que atraviesa este lugar, <i>seguí nuestro recorrido en redes sociales:</i>"
+    "socialAction": "Para atisbar la energía que atraviesa este lugar, seguí nuestro recorrido en redes sociales:"
   }
 }
