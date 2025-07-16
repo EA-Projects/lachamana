@@ -9570,6 +9570,10 @@ section {
   #hero {
     min-height: auto;
   }
+  #hero::after {
+    background: -webkit-gradient(linear, left bottom, left top, from(#D8CEB7), color-stop(45%, rgba(216, 206, 183, 0.1176470588)), to(rgba(216, 206, 183, 0)));
+    background: linear-gradient(0deg, #D8CEB7 0%, rgba(216, 206, 183, 0.1176470588) 45%, rgba(216, 206, 183, 0) 100%);
+  }
   #hero .container {
     min-height: auto;
   }

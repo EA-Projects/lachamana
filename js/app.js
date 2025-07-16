@@ -42,6 +42,13 @@ function loadLanguage(lang) {
         $(this).attr('value', translation || `[${key}]`);
       });
 
+      // Apply url's to links
+      $('[data-i18n-href]').each(function () {
+        const key = $(this).data('i18n-href');
+        const translated = $.i18n(key);
+        $(this).attr('href', translated || '#');
+      });
+
       // Set button active
       $('.lang-button').removeClass('active');
       $(`.lang-button[data-lang="${lang}"]`).addClass('active');

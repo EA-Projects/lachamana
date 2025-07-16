@@ -514,6 +514,13 @@ section{
     }  
     @media (max-width: 425px){
         min-height: auto;
+        &::after{
+            background: linear-gradient(0deg, 
+            #D8CEB7 0%, 
+            #d8ceb71e 45%,
+            #d8ceb700 100%
+            );
+        }
         .container{
             min-height: auto;
         }
