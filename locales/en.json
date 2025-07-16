@@ -102,25 +102,24 @@
     }
   },
   "form": {
-    "title": "Be part of this <i>first chapter</i>",
-    "description": "Leave your details and someone from our team will reach out personally to begin the conversation.",
+    "title": "Join the <i>pre-sale</i> deal",
+    "firstDescription": "La Chamana is not open yet, but you can be among the first to experience it.",
+    "secondDescription": "We’re currently offering a limited number of inaugural stays, available for confirmed bookings made between July and August 2025.",
+    "disclaimer": "*These journeys can be scheduled anytime between August 2025 and July 2026, in dialogue with our team and subject to availability.",
+    "guideTitle": "Step inside before you arrive",
+    "guideDescription": "Our guide offers a closer look at the spaces, elements, and intentions that shape your stay.",
+    "guideButton": "Download the Experience Guide",
+    "formTitle": "Share your info to open the conversation",
     "fullNameLabel": "Full Name *",
     "emailLabel": "Email *",
-    "phoneLabel": "Phone",
-    "countryLabel": "Country/Region",
-    "dateLabel": "When would you like to come?",
-    "messageLabel": "Is there anything you'd like to share with us before stepping into this experience?",
-    "buttonSubmit": "Send request",
+    "buttonSubmit": "Send me more info",
     "contactOr": "<i>or</i>",
     "contactTitle": "Contact us via iMessage:",
     "contactButton": "Drop us a message",
     "success":{
       "title": "Thank you for your request!",
       "description": "Someone from our team will reach out personally to begin the conversation."
-    }
-  },
-  "footer":{
-    "description":"A sanctuary of silence, of elemental beauty, of ancient memory awakening within.",
-    "titleSocial": "Learn more at"
+    },
+    "socialAction": "<i>Follow our path on social media</i> for glimpses into the energy that moves through this space:"
   }
 }

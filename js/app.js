@@ -112,12 +112,14 @@ window.addEventListener('load', function () {
           .then((response) => {
             $('#success-message').addClass('visible');
             $('#reserve-form').addClass('readonly');
+            $('.wrapper-reserve-area').addClass('readonly');
             $('#reserve-form input.button').val("Submitted");
           })
           .catch((error) => {
             console.error('Error!', error.message);
             $('#success-message').removeClass('visible');
             $('#reserve-form').removeClass('readonly');
+            $('.wrapper-reserve-area').removeClass('readonly');
             $('#reserve-form input.button').val("Submit Information");
           });
       });
