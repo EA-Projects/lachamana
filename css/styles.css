@@ -9897,8 +9897,8 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
     right: 8%;
   }
   #stacked-gallery .inner-gallery .inner-photos.is-5 {
-    width: 55vw;
-    bottom: 5%;
+    width: 50vw;
+    bottom: 3%;
     left: 4%;
   }
   #stacked-gallery .inner-gallery .inner-photos.is-6 {
@@ -9907,7 +9907,7 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
     right: 8%;
   }
   #stacked-gallery .inner-gallery .inner-photos.is-7 {
-    width: 60vw;
+    width: 70vw;
     bottom: 5%;
     left: 5%;
   }
@@ -9917,14 +9917,14 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
     right: 5%;
   }
   #stacked-gallery .inner-gallery .inner-photos.is-9 {
-    width: 55vw;
+    width: 40vw;
     top: 3%;
     left: 5%;
   }
   #stacked-gallery .inner-gallery .inner-photos.is-10 {
-    width: 55vw;
-    top: 5%;
-    right: 5%;
+    width: 70vw;
+    top: 2%;
+    right: 3%;
   }
   #stacked-gallery .inner-gallery .inner-photos.is-11 {
     width: 65vw;
@@ -9932,7 +9932,7 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
     left: 2%;
   }
   #stacked-gallery .inner-gallery .inner-photos.is-12 {
-    width: 55vw;
+    width: 45vw;
     top: 2%;
     right: 2%;
   }
