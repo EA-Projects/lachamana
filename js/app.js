@@ -63,6 +63,7 @@ function loadLanguage(lang) {
 
 window.addEventListener('load', function () {
 const photos = gsap.utils.toArray("#stacked-gallery .inner-content-holder .inner-gallery .inner-photos");
+gsap.set(photos, { opacity: 1 });
 const groupSize = 1;
 
 let stackedGalleryAnimation = gsap.timeline({
@@ -77,7 +78,7 @@ let stackedGalleryAnimation = gsap.timeline({
 
 // Intro
   stackedGalleryAnimation.from(
-    "#stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p",
+    "#stacked-gallery .inner-content-holder .inner-content img, #stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p",
     {
       y: 30,
       opacity: 0,
@@ -127,7 +128,7 @@ let stackedGalleryAnimation = gsap.timeline({
     }
   )
   .to(
-    "#stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p, #stacked-gallery .inner-content-holder .inner-content div",
+    "#stacked-gallery .inner-content-holder .inner-content img, #stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p, #stacked-gallery .inner-content-holder .inner-content div",
     {
       delay: 4,
       filter: 'blur(30px)',

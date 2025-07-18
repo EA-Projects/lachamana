@@ -189,7 +189,7 @@ ul,ol{
     margin: 0;
     padding-left: 6px;
     li{
-        font-size: 12px;
+        font-size: 13px;
         color: $light-yellow;
         position: relative;
         margin: 5px 0;
@@ -229,6 +229,19 @@ ul{
                 }
             }
         }
+    }
+}
+
+.inline-button{
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: $light-brown;
+    border-bottom: 1px solid $light-brown;
+    transition: all .5s ease-in-out;
+    &:hover{
+        color: $light-green;
+        border-color: $light-green;
     }
 }
 
@@ -496,6 +509,11 @@ section{
             }
         }
     }
+    @media (min-width: 1920px){
+        .container{
+            min-height: 80vh;
+        }
+    }
     @media (max-width: 991px){
         .inner-top-hero{
             .inner-flex{
@@ -577,9 +595,9 @@ section{
 }
 
 .modal-backdrop{
-    background-color: $dark-green;
+    background-color: $dark;
     &.show{
-        opacity: 0.9;
+        opacity: 0.90;
     }
 }
 .modal.fade .modal-dialog {
@@ -631,6 +649,24 @@ section{
                 h4{
                     text-align: center;
                     margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    &.is-pricing{
+        padding: 40px 20px !important;
+        .modal-dialog{
+            height: auto;
+            max-width: 1070px;
+            display: block;
+            .modal-content{
+                border-radius: 0;
+                padding: 0;
+                background-color: transparent;
+                backdrop-filter: none;
+                border: 0;
+                .modal-body{
+                    line-height: initial;
                 }
             }
         }
@@ -719,6 +755,7 @@ section{
             border-radius: 6px;
             overflow: hidden;
             position: absolute;
+            opacity: 0;
             img{
                 width: 100%;
             }
@@ -1391,6 +1428,85 @@ section{
     }
 }
 
+.wrapper-nights-card{
+    height: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    .nights-card{
+        width: 100%;
+        margin: 0 0 0 auto;
+        padding: 30px;
+        background-color: rgba(11, 13, 2, 0.8);
+        border: 1px solid $border-brown;
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+        .inner-night-title{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0;
+            .top-area{
+                .d-flex{
+                    gap: 3px;
+                    margin-bottom: 15px;
+                }
+                h3{
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            .bottom-area{
+                margin-top: 40px;
+                h4{
+                    margin-bottom: 10px;
+                }
+                .divider-large{
+                    display: block;
+                    height: 1px;
+                    width: 100%;
+                    background-color: $border-brown; 
+                    margin: 15px 0;
+                }
+            }
+        }
+        .divider{
+            align-self: stretch;
+            width: 100%;
+            height: 1px;
+            background-color: $border-brown;
+        }
+        .inner-night-details{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+            .bottom-detail{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    @media(max-width: 767px){
+        flex-direction: column;
+    }
+    @media(max-width: 480px){
+        .nights-card{
+            padding: 30px 15px;
+        }
+    }
+}
+
 #form{
     padding: 135px 0 100px;
     background-color: #D8CEB7;
@@ -1552,6 +1668,7 @@ section{
                 }
                 .wrapper-submit{
                     margin-top: 10px;
+                    margin-bottom: 5px;
                     position: relative;
                     &::before{
                         content: "";
