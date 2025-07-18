@@ -10745,6 +10745,15 @@ body.is-es #form .inner-top-area p.large {
   height: 1px;
   background-color: #342A1F;
 }
+body.is-en #form .wrapper-form .wrapper-reserve-area .bottom-form .is-whatsapp {
+  display: none;
+}
+body.is-es #form .wrapper-form .wrapper-reserve-area .bottom-form .is-whatsapp {
+  display: inline-block;
+}
+body.is-es #form .wrapper-form .wrapper-reserve-area .bottom-form .is-imessage {
+  display: none;
+}
 #form .wrapper-form .wrapper-reserve-area #success-message {
   opacity: 0;
   visibility: hidden;

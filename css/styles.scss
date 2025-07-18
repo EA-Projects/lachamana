@@ -1533,6 +1533,19 @@ section{
                         background-color: $border-brown;
                     }
                 }
+                body.is-en & {
+                    .is-whatsapp {
+                        display: none;
+                    }
+                }
+                 body.is-es & {
+                    .is-whatsapp {
+                        display: inline-block;
+                    }
+                    .is-imessage {
+                        display: none;
+                    }
+                }
             }
             #success-message{
                 opacity: 0;
