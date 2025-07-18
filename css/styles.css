@@ -10631,6 +10631,9 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
           justify-content: space-between;
   gap: 0;
 }
+.wrapper-nights-card .nights-card .inner-night-title .top-area {
+  min-height: 155px;
+}
 .wrapper-nights-card .nights-card .inner-night-title .top-area .d-flex {
   gap: 3px;
   margin-bottom: 15px;

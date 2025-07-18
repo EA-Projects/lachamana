@@ -1455,6 +1455,7 @@ section{
             justify-content: space-between;
             gap: 0;
             .top-area{
+                min-height: 155px;
                 .d-flex{
                     gap: 3px;
                     margin-bottom: 15px;
