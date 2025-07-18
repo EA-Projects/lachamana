@@ -139,7 +139,7 @@ p, .p{
         font-size: 12px;
     }
     &.medium{
-        font-size: 13px;
+        font-size: 15px;
     }
     &.large{
         font-size: 19px;
@@ -721,7 +721,6 @@ section{
             position: absolute;
             img{
                 width: 100%;
-                opacity: .5;
             }
             &.is-1{
                 width: 35vw;
@@ -1401,7 +1400,7 @@ section{
         h2{
             margin-bottom: 20px;
         }
-        p.large{
+        p:not(.smaller){
             max-width: 800px;
             margin: 0 auto 10px;
              body.is-es & {
@@ -1444,6 +1443,8 @@ section{
                 margin-bottom: 8px;
             }
             p{
+                max-width: 380px;
+                margin: 0 auto;
                 margin-bottom: 80px;
             }
         }

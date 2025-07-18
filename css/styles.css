@@ -9144,7 +9144,7 @@ p.smaller, .p.smaller {
   font-size: 12px;
 }
 p.medium, .p.medium {
-  font-size: 13px;
+  font-size: 15px;
 }
 p.large, .p.large {
   font-size: 19px;
@@ -9788,7 +9788,6 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
 }
 #stacked-gallery .inner-gallery .inner-photos img {
   width: 100%;
-  opacity: 0.5;
 }
 #stacked-gallery .inner-gallery .inner-photos.is-1 {
   width: 35vw;
@@ -10556,11 +10555,11 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
 #form .inner-top-area h2 {
   margin-bottom: 20px;
 }
-#form .inner-top-area p.large {
+#form .inner-top-area p:not(.smaller) {
   max-width: 800px;
   margin: 0 auto 10px;
 }
-body.is-es #form .inner-top-area p.large {
+body.is-es #form .inner-top-area p:not(.smaller) {
   max-width: 810px;
 }
 #form .inner-top-area .smaller {
@@ -10609,6 +10608,8 @@ body.is-es #form .inner-top-area p.large {
   margin-bottom: 8px;
 }
 #form .guide-block .inner-content p {
+  max-width: 380px;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 #form .wrapper-form {
