@@ -63,27 +63,27 @@ function loadLanguage(lang) {
 
 window.addEventListener('load', function () {
 const photos = gsap.utils.toArray("#stacked-gallery .inner-content-holder .inner-gallery .inner-photos");
-const groupSize = 1; // Mostramos 1 por vez
-const staggerDelay = 0.1;
+const groupSize = 1;
 
 let stackedGalleryAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: '#stacked-gallery',
     start: '0% 0%',
-    end: '85% 100%',
-    scrub: 0.5,
-    markers: true,
+    end: '102% 100%',
+    scrub: 1,
+    // markers: true,
   }
 });
 
 // Intro
   stackedGalleryAnimation.from(
-    "#stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p, #stacked-gallery .inner-content-holder .inner-content div",
+    "#stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p",
     {
       y: 30,
       opacity: 0,
-      stagger: 0.2,
-      duration: 0.2,
+      filter: 'blur(30px)',
+      stagger: 0.4,
+      duration: 4,
     }
   );
 
@@ -91,31 +91,51 @@ let stackedGalleryAnimation = gsap.timeline({
   for (let i = 0; i < photos.length; i += groupSize) {
     const group = photos.slice(i, i + groupSize);
 
-    // Mostrar grupo
+    // Show group
     stackedGalleryAnimation.from(group, {
       opacity: 0,
-      scale: () => gsap.utils.random(0.5, 0.9),
+      scale: () => gsap.utils.random(0.8, 0.9),
       filter: 'blur(30px)',
       stagger: {
-        each: .2,
+        each: 1,
       },
       ease: "power2.out",
-      duration: 1,
-    },'=-1');
+      duration: 4,
+    },'=-3.5');
 
-    // Mantener visibles un tiempo y luego ocultar
+    // Keep visible and then hidde
     stackedGalleryAnimation.to(group, {
       opacity: 0,
       scale: () => gsap.utils.random(0.8, 1.2),
       filter: 'blur(10px)',
       stagger: {
-        each: .2,
+        each: 1,
       },
       ease: "power2.in",
-      duration: 1,
+      duration: 4,
       delay: 0,
     })
   }
+
+  stackedGalleryAnimation.from(
+    "#stacked-gallery .inner-content-holder .inner-content div",
+    {
+      y: 30,
+      filter: 'blur(30px)',
+      opacity: 0,
+      duration: 3,
+    }
+  )
+  .to(
+    "#stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p, #stacked-gallery .inner-content-holder .inner-content div",
+    {
+      delay: 4,
+      filter: 'blur(30px)',
+      stagger: 0.4,
+      opacity: 0,
+      duration: 4,
+    }
+  );
 
 
 
