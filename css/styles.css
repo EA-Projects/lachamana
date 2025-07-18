@@ -9857,11 +9857,11 @@ body.is-es #hero .inner-bottom-hero .inner-flex {
 }
 @media (max-width: 575px) {
   #stacked-gallery .inner-content-holder .inner-content p {
-    max-width: 240px;
+    max-width: 280px;
     margin: 0 auto;
   }
   body.is-es #stacked-gallery .inner-content-holder .inner-content p {
-    max-width: 220px;
+    max-width: 260px;
   }
   #stacked-gallery .inner-gallery .inner-photos {
     border-radius: 4px;
