@@ -60,6 +60,63 @@ function loadLanguage(lang) {
 }
 
 window.addEventListener('load', function () {
+const photos = gsap.utils.toArray("#stacked-gallery .inner-content-holder .inner-gallery .inner-photos");
+const groupSize = 1; // Mostramos 1 por vez
+const staggerDelay = 0.1;
+
+let stackedGalleryAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#stacked-gallery',
+    start: '0% 0%',
+    end: '85% 100%',
+    scrub: 0.5,
+    markers: true,
+  }
+});
+
+// Intro
+  stackedGalleryAnimation.from(
+    "#stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p, #stacked-gallery .inner-content-holder .inner-content div",
+    {
+      y: 30,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 0.2,
+    }
+  );
+
+  // Show gallery in batches
+  for (let i = 0; i < photos.length; i += groupSize) {
+    const group = photos.slice(i, i + groupSize);
+
+    // Mostrar grupo
+    stackedGalleryAnimation.from(group, {
+      opacity: 0,
+      scale: () => gsap.utils.random(0.5, 0.9),
+      filter: 'blur(30px)',
+      stagger: {
+        each: .2,
+      },
+      ease: "power2.out",
+      duration: 1,
+    },'=-1');
+
+    // Mantener visibles un tiempo y luego ocultar
+    stackedGalleryAnimation.to(group, {
+      opacity: 0,
+      scale: () => gsap.utils.random(0.8, 1.2),
+      filter: 'blur(10px)',
+      stagger: {
+        each: .2,
+      },
+      ease: "power2.in",
+      duration: 1,
+      delay: 0,
+    })
+  }
+
+
+
   // Play and pause full video when users open the modal
   var $video = $('#inner-full-video');
 
