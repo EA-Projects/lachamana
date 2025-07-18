@@ -794,8 +794,13 @@ section{
     @media(max-width: 575px){
         .inner-content-holder{
             .inner-content{
-                max-width: 250px;
-                margin: 0 auto;
+                p{
+                    max-width: 240px;
+                    margin: 0 auto;
+                    body.is-es & {
+                        max-width: 220px;
+                    }
+                }
             }
         }
         .inner-gallery{
@@ -837,7 +842,7 @@ section{
                     left: 5%;
                 }
                 &.is-8{
-                    width: 55vw;
+                    width: 50vw;
                     bottom: initial;
                     top: 2%;
                     right: 5%;
