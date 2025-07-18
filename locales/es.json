@@ -8,6 +8,11 @@
     "secondIntro": "Una villa privada en Tulum, diseñada para quienes buscan belleza, presencia e intimidad. Para quienes entienden que el verdadero lujo es sentirse visto. Conocido. Sostenido.",
     "titlePreviewVideo": "Explorar el <br> <i>Santuario</i>"
   },
+  "stackedGallery":{
+    "title": "No estamos abriendo puertas. <br><i>Estamos cruzando un umbral.</i>",
+    "description": "La Chamana no es solo un destino. Es una forma de habitar el tiempo.",
+    "button": "Explorá la galería"
+  },
   "places": {
     "title": "Hay lugares que no se <i>visitan</i>. Se <i>experimentan</i>.",
     "description": "La Chamana es una villa privada rodeada por la selva de Tulum, a solo minutos de las playas más hermosas de la zona. <br>Diseñada para estadías completas, invita a tu grupo a <i>bajar el ritmo, reconectar y habitar con intención</i>.",
