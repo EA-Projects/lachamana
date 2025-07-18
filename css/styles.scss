@@ -447,14 +447,17 @@ section{
         align-items: center;
         justify-content: space-between;
         .inner-flex{
-            max-width: 650px;
+            max-width: 675px;
             h4{
                 color: $dark-green;
+            }
+            body.is-es & {
+                max-width: 710px;
             }
         }
         .inner-video-preview{
             width: 100%;
-            max-width: 310px;
+            max-width: 280px;
             display: flex;
             align-items: center;
             gap: 16px;
@@ -1325,6 +1328,9 @@ section{
         p.large{
             max-width: 800px;
             margin: 0 auto 10px;
+             body.is-es & {
+                max-width: 810px;
+            }
         }
         .smaller{
             color: #706854;

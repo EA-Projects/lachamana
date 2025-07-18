@@ -3,10 +3,10 @@
     "callToActionTitle": "Sumate al primer capítulo",
     "callToActionButton": "Conectá con nosotros",
     "languageTitle": "Selecciona tu idioma",
-    "title": "No estás eligiendo a <i>dónde</i> ir. <br> Estás eligiendo <i>cómo</i> estar.",
+    "title": "No estás eligiendo una <i>estadía</i>. <br>Estás eligiendo un <i>comienzo</i>.",
     "firstIntro": "La Chamana no es solo un destino. Es una forma de habitar el tiempo.",
-    "secondIntro": "Una villa privada en Tulum, creada para quienes buscan belleza, presencia, privacidad y esa calidad que transforma cada momento en algo único.",
-    "titlePreviewVideo": "Descubre <br> <i>nuestra escencia</i>"
+    "secondIntro": "Una villa privada en Tulum, diseñada para quienes buscan belleza, presencia e intimidad. Para quienes entienden que el verdadero lujo es sentirse visto. Conocido. Sostenido.",
+    "titlePreviewVideo": "Explorar el <br> <i>Santuario</i>"
   },
   "places": {
     "title": "Hay lugares que no se <i>visitan</i>. Se <i>experimentan</i>.",
@@ -103,14 +103,14 @@
   },
   "form": {
     "title": "Sumate a la <i>preventa</i>",
-    "firstDescription": "La Chamana aún no ha abierto sus puertas, pero podés ser de los primeros en vivirla.",
-    "secondDescription": "Estamos ofreciendo un número limitado de estadías inaugurales, disponibles para reservas confirmadas entre julio y agosto de 2025.",
+    "firstDescription": "La Chamana aún no ha abierto sus puertas, pero podés ser de los primeros en vivirla, dentro de nuestro círculo privado de preventa, con tarifas especiales de acceso anticipado.",
+    "secondDescription": "Estamos ofreciendo una cantidad limitada de estadías inaugurales, disponibles para reservas confirmadas entre julio y agosto de 2025. Estas experiencias pueden programarse en cualquier momento entre agosto de 2025 y julio de 2026, en diálogo con nuestro equipo y sujetas a disponibilidad.",
     "disclaimer": "*Estas experiencias pueden programarse en cualquier momento entre agosto de 2025 y julio de 2026, en diálogo con nuestro equipo y sujetas a disponibilidad.",
-    "guideTitle": "Entrá antes de llegar",
-    "guideDescription": "Nuestra guía te invita a descubrir de cerca los espacios, elementos e intenciones que dan forma a tu estadía.",
+    "guideTitle": "Entra antes de llegar",
+    "guideDescription": "Nuestra guía revela los espacios, rituales e intenciones que hacen de La Chamana mucho más que una estadía; un lugar donde podés sentir la textura misma del tiempo.",
     "guideButton": "Descargar la Guía de Experiencia",
     "guideLink": "/booklet-es.pdf",
-    "formTitle": "Compartí tus datos para comenzar la conversación",
+    "formTitle": "Me interesa. Conversemos.",
     "fullNameLabel": "Nombre completo *",
     "emailLabel": "Email *",
     "buttonSubmit": "Quiero saber más",
@@ -121,6 +121,6 @@
       "title": "¡Gracias por tu solicitud!",
       "description": "Alguien de nuestro equipo se pondrá en contacto personalmente para comenzar la conversación."
     },
-    "socialAction": "Para atisbar la energía que atraviesa este lugar, seguí nuestro recorrido en redes sociales:"
+    "socialAction": "Síguenos en redes para entrever la energía que se respira dentro de este santuario:"
   }
 }

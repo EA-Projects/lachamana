@@ -53,6 +53,8 @@ function loadLanguage(lang) {
       $('.lang-button').removeClass('active');
       $(`.lang-button[data-lang="${lang}"]`).addClass('active');
 
+      $('body').removeClass('is-en is-es').addClass(`is-${lang}`);
+      
       // Save in localStorage 
       localStorage.setItem('lang', lang);
     });

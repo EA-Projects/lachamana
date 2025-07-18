@@ -9488,14 +9488,17 @@ section {
           justify-content: space-between;
 }
 #hero .inner-bottom-hero .inner-flex {
-  max-width: 650px;
+  max-width: 675px;
 }
 #hero .inner-bottom-hero .inner-flex h4 {
   color: #121C13;
 }
+body.is-es #hero .inner-bottom-hero .inner-flex {
+  max-width: 710px;
+}
 #hero .inner-bottom-hero .inner-video-preview {
   width: 100%;
-  max-width: 310px;
+  max-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10486,6 +10489,9 @@ section {
 #form .inner-top-area p.large {
   max-width: 800px;
   margin: 0 auto 10px;
+}
+body.is-es #form .inner-top-area p.large {
+  max-width: 810px;
 }
 #form .inner-top-area .smaller {
   color: #706854;

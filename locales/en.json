@@ -3,10 +3,10 @@
     "callToActionTitle": "Join the first chapter",
     "callToActionButton": "Connect with us",
     "languageTitle": "Select your language",
-    "title": "You're not choosing <i>where</i> to go. <br> You're choosing <i>how</i> to be.",
+    "title": "You're not choosing a <i>stay</i>. <br> You're choosing a <i>beginning</i>.",
     "firstIntro": "La Chamana is not just a destination. She is a way of inhabiting time.",
-    "secondIntro": "A private villa in Tulum, designed for those who seek beauty, presence, privacy, and the kind of quality that makes each moment feel one of a kind.",
-    "titlePreviewVideo": "Discover <br><i>our essence</i>"
+    "secondIntro": "A private villa in Tulum, designed for those who seek beauty, presence, and privacy. Those who understand that true luxury is about being seen. Known. Held.",
+    "titlePreviewVideo": "Enter the <br><i>Sanctuary</i>"
   },
   "places": {
     "title": "Some places are not <i>visited</i>. They are <i>experienced</i>.",
@@ -103,14 +103,14 @@
   },
   "form": {
     "title": "Join the <i>pre-sale</i> deal",
-    "firstDescription": "La Chamana is not open yet, but you can be among the first to experience it.",
-    "secondDescription": "We’re currently offering a limited number of inaugural stays, available for confirmed bookings made between July and August 2025.",
+    "firstDescription": "La Chamana is not open yet, but you can be among the first to experience it, our private pre-sale circle, with early access pricing.",
+    "secondDescription": "We’re offering a limited number of inaugural stays, available for bookings confirmed between July and August 2025. These journeys can be scheduled anytime between August 2025 and July 2026, in dialogue with our team and subject to availability.",
     "disclaimer": "*These journeys can be scheduled anytime between August 2025 and July 2026, in dialogue with our team and subject to availability.",
     "guideTitle": "Step inside before you arrive",
-    "guideDescription": "Our guide offers a closer look at the spaces, elements, and intentions that shape your stay.",
+    "guideDescription": "Our guide reveals the spaces, rituals, and intentions that make La Chamana more than a stay; a place to feel the texture of time itself.",
     "guideButton": "Download the Experience Guide",
     "guideLink": "/booklet-en.pdf",
-    "formTitle": "Share your info to open the conversation",
+    "formTitle": "I’m interested. Let’s start the dialogue.",
     "fullNameLabel": "Full Name *",
     "emailLabel": "Email *",
     "buttonSubmit": "Send me more info",
@@ -121,6 +121,6 @@
       "title": "Thank you for your request!",
       "description": "Someone from our team will reach out personally to begin the conversation."
     },
-    "socialAction": "Follow our path on social media for glimpses into the energy that moves through this space:"
+    "socialAction": "Follow our path on social media for glimpses of the energy that breathes through this sanctuary:"
   }
 }
