@@ -62,21 +62,28 @@ function loadLanguage(lang) {
 }
 
 window.addEventListener('load', function () {
-const photos = gsap.utils.toArray("#stacked-gallery .inner-content-holder .inner-gallery .inner-photos");
-gsap.set(photos, { opacity: 1 });
-const groupSize = 1;
 
-let stackedGalleryAnimation = gsap.timeline({
-  scrollTrigger: {
-    trigger: '#stacked-gallery',
-    start: '0% 0%',
-    end: '102% 100%',
-    scrub: 1,
-    // markers: true,
+  if (window.location.hash === '#packages') {
+    setTimeout(function(){
+      $('#pricingModal').modal('show');
+    }, 250)
   }
-});
 
-// Intro
+  const photos = gsap.utils.toArray("#stacked-gallery .inner-content-holder .inner-gallery .inner-photos");
+  gsap.set(photos, { opacity: 1 });
+  const groupSize = 1;
+
+  let stackedGalleryAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#stacked-gallery',
+      start: '0% 0%',
+      end: '102% 100%',
+      scrub: 1,
+      // markers: true,
+    }
+  });
+
+  // Intro
   stackedGalleryAnimation.from(
     "#stacked-gallery .inner-content-holder .inner-content img, #stacked-gallery .inner-content-holder .inner-content h3, #stacked-gallery .inner-content-holder .inner-content p",
     {
