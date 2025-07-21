@@ -195,7 +195,7 @@ window.addEventListener('load', function () {
   
         // Sending status
         $('#reserve-form').addClass('readonly');
-        $('#reserve-form input.button').val("Sending Information");
+        // $('#reserve-form input.button').val("Sending Information");
   
         e.preventDefault();
   
@@ -214,7 +214,7 @@ window.addEventListener('load', function () {
             $('#success-message').removeClass('visible');
             $('#reserve-form').removeClass('readonly');
             $('.wrapper-reserve-area').removeClass('readonly');
-            $('#reserve-form input.button').val("Submit Information");
+            $('#reserve-form input.button').val("Send me more info");
           });
       });
     });
