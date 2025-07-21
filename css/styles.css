@@ -9087,9 +9087,6 @@ h4, .h4 {
   }
 }
 @media (max-width: 575px) {
-  h4, .h4 {
-    font-size: 16px;
-  }
   h4.medium, .h4.medium {
     font-size: 18px;
   }
@@ -10726,8 +10723,6 @@ body.is-es #form .inner-top-area p:not(.smaller) {
 }
 #form .guide-block {
   height: 100%;
-  max-width: 510px;
-  margin: 0 auto;
   background-image: url("../public/images/guide-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -10772,8 +10767,6 @@ body.is-es #form .inner-top-area p:not(.smaller) {
 }
 #form .wrapper-form {
   height: 100%;
-  max-width: 510px;
-  margin: 0 auto;
   border-radius: 8px;
   padding: 50px 20px;
   background-color: #121C13;
@@ -11044,7 +11037,25 @@ body.is-es #form .wrapper-form .wrapper-reserve-area .bottom-form .is-imessage {
   visibility: visible;
 }
 #form .bottom-reservation {
-  margin-top: 50px;
+  margin-top: 30px;
+  padding: 25px 30px;
+  background-color: #F4F0E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  gap: 10px;
+}
+#form .bottom-reservation p {
+  color: #121C13;
+}
+#form .bottom-reservation .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11054,12 +11065,9 @@ body.is-es #form .wrapper-form .wrapper-reserve-area .bottom-form .is-imessage {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
-#form .bottom-reservation p {
-  color: #121C13;
-}
-#form .bottom-reservation a {
+#form .bottom-reservation .social-icons a {
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -11077,7 +11085,7 @@ body.is-es #form .wrapper-form .wrapper-reserve-area .bottom-form .is-imessage {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#form .bottom-reservation a:hover {
+#form .bottom-reservation .social-icons a:hover {
   background: #F5C03D;
   color: #121C13;
 }
@@ -11089,20 +11097,21 @@ body.is-es #form .wrapper-form .wrapper-reserve-area .bottom-form .is-imessage {
 }
 @media (max-width: 767px) {
   #form .bottom-reservation {
-    max-width: 510px;
-    margin: 50px auto 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 10px;
-  }
-  #form .bottom-reservation p {
-    max-width: 80%;
+    gap: 40px;
   }
 }
 @media (max-width: 575px) {
   #form {
     padding: 70px 0;
+  }
+  #form .bottom-reservation {
+    margin-top: 20px;
+    gap: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
