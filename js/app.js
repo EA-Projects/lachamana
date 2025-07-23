@@ -219,5 +219,20 @@ window.addEventListener('load', function () {
       });
     });
   }
+
+  // Copy email to clipboard
+  $('span.copy').on('click', function () {
+    const $this = $(this);
+    const email = $this.data('email');
+
+    navigator.clipboard.writeText(email).then(function () {
+      const originalText = $this.find('span').text();
+      $this.find('span').text('Copied to clipboard!');
+      
+      setTimeout(function () {
+        $this.find('span').text(originalText);
+      }, 2000);
+    })
+  });
 });
 

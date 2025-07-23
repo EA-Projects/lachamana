@@ -1799,6 +1799,39 @@ section{
             align-items: center;
             justify-content: center;
             gap: 10px;
+            .email-icon{
+                position: relative;
+                &:hover{
+                    span.copy{
+                        opacity: 1;
+                        transform: translate(-50%, -50%) scale(1);
+                    }
+                }
+                span.copy{
+                    width: max-content;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4px;
+                    border-radius: 50px;
+                    padding: 4px 10px;
+                    border: 1px solid #f5c13d22;
+                    background-color: $dark-green;
+                    color: $green;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(.95);
+                    margin-top: -40px;
+                    opacity: 0;
+                    transition: all .3s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        border: 1px solid #f5c13d94;
+                        transform: translate(-50%, -50%) scale(1.02);
+                    }
+                }
+            }
             a{
                 width: 40px;
                 height: 40px;
@@ -1812,6 +1845,10 @@ section{
                 &:hover{
                     background: $green;
                     color: $dark-green;
+                    span.copy{
+                        opacity: 1;
+                        transform: translate(-50%, -50%) scale(1);
+                    }
                 }
             }
         }
